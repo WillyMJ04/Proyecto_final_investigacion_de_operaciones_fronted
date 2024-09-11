@@ -1,0 +1,167 @@
+/* Estilo base */
+.instance-child {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #fe6f23;
+}
+
+.get-started {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    color: #fff;
+    background-color: #fe6f23;
+    text-align: center;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 12px;
+    width: auto;
+    white-space: nowrap;
+}
+
+.chevrons-right-icon {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+.rectangle-parent {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 350px;
+    height: 56px;
+    cursor: pointer;
+}
+
+.text {
+    position: absolute;
+    top: 55%; /* Ajustado */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    text-align: center;
+    max-width: 90%; /* Limitar el ancho para evitar el desbordamiento */
+}
+
+.style-2 {
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.text1 {
+    position: absolute;
+    top: 63%; /* Ajustado */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.style-3 {
+    font-weight: 300;
+    text-align: center;
+}
+
+.text2 {
+    position: absolute;
+    top: 75%; /* Ajustado */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    max-width: 90%; /* Limitar el ancho para evitar el desbordamiento */
+    font-size: 16px;
+}
+
+.logistics-rafiki-1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    max-width: 500px; /* Limitar el tamaño del camión */
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: auto;
+}
+
+.home {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center; /* Cambiado a centro */
+    font-size: 16px;
+    color: #171321;
+    font-family: Poppins, sans-serif;
+}
+
+.truck {
+    display: block;
+    max-width: 60%;
+    top: 20%;
+    height: auto;
+    margin: 20px auto;
+}
+
+/* Ajustes para pantallas grandes */
+@media only screen and (min-width: 1024px) {
+    .text, .text1, .text2 {
+        font-size: 1.3em; /* Limitar el crecimiento de los textos */
+    }
+
+    .logistics-rafiki-1 {
+        max-width: 400px; /* Limitar el tamaño de la imagen en pantallas grandes */
+    }
+
+    .rectangle-parent {
+        max-width: 300px; /* Ajustar el tamaño del botón */
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+    .get-started, .text, .text1, .text2 {
+        font-size: 1.3em; /* Tamaño incrementado */
+    }
+
+    .rectangle-parent, .logistics-rafiki-1, .logo {
+        width: 90%;
+        max-width: none;
+    }
+
+    .home {
+        font-size: 12px; /* Tamaño incrementado */
+    }
+
+    .truck {
+        width: 85%; /* Tamaño incrementado */
+    }
+
+    .chevrons-right-icon {
+        height: 18px; /* Tamaño incrementado */
+        width: 18px; /* Tamaño incrementado */
+        right: 10%;
+    }
+}

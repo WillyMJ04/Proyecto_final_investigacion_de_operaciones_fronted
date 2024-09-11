@@ -1,0 +1,88 @@
+.instance-child {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #fe6f23;
+}
+
+.get-started {
+    position: absolute;
+    top: 16.07%;
+    left: 19.23%;
+    font-weight: 600;
+    color: #fff;
+}
+
+.chevrons-right-icon {
+    position: absolute;
+    height: 42.86%;
+    width: 8.39%;
+    top: 28.57%;
+    right: 8.74%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.rectangle-parent {
+    position: absolute;
+    top: 88.25%;
+    left: 10.56%;
+    width: 79.44%;
+    height: 7%;
+    cursor: pointer;
+    font-size: 24.56px;
+    color: #fff;
+}
+
+.text {
+    position: absolute;
+    top: 58.13%;
+    left: 21.39%;
+    width: 59.17%;
+    height: 6.38%;
+    font-size: 32.55px;
+    text-align: center;
+}
+
+.style-3 {
+    font-weight: 300;
+    text-align: center;
+}
+
+.text1 {
+    position: absolute;
+    top: 72.38%;
+    left: 5.28%;
+    width: 89.72%;
+    height: 10.88%;
+    text-align: center;
+    font-size: 13px;
+}
+
+.logo {
+    position: absolute;
+    top: 53px;
+    left: 88px;
+    width: 196px;
+    height: 50px;
+}
+
+.start {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 800px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 15px;
+    color: #171321;
+    font-family: Poppins;
+}
+
+.truck {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 130px auto 0 auto;
+}

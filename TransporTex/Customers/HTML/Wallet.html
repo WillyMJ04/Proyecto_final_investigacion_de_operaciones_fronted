@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;800;900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" />
+    <link rel="stylesheet" href="../CSS/Wallet.css">
+    <link rel="stylesheet" href="../CSS/global.css">
+
+
+</head>
+<body>
+
+<div class="wallet-parent">
+    <div class="wallet">
+        <div class="billetera">Billetera</div>
+        <div class="wrapper">
+        </div>
+
+        <div class="rectangle-parent" id="groupContainer">
+            <div class="group-child">
+            </div>
+            <img class="chevron-right-icon" src="../../imgs/Customers/chevron-left-simple-white.png"/>
+
+        </div>
+        <div class="detalles-de-pago-wrapper">
+            <div class="detalles-de-pago">Detalles de pago </div>
+        </div>
+        <div class="tarjeta-1-wrapper">
+            <div class="tarjeta-1">Tarjeta 1</div>
+        </div>
+        <div class="tarjeta-2-wrapper">
+            <div class="tarjeta-2">Tarjeta 2</div>
+        </div>
+        <div class="container">
+            <div class="div1">**** **** **** 1234</div>
+        </div>
+        <div class="edit-plus-circle-outline-parent" id="groupContainer5">
+            <img class="edit-plus-circle-outline" src="../../imgs/Customers/add.png" height="15" width="15"/>
+
+            <div class="aadir-otra-tarjeta-parent">
+                <div class="aadir-otra-tarjeta">Añadir otra tarjeta</div>
+                <img class="basic-credit-card" src="../../imgs/Customers/credit_card.png"/>
+                <img class="basic-credit-card1" src="../../imgs/Customers/credit_card.png"/>
+
+            </div>
+        </div>
+        <div class="div2">**** **** **** 1234</div>
+        <img class="icon-trash" src="../../imgs/Customers/remove.png" />
+        <img class="icon-trash1" src="../../imgs/Customers/remove.png" />
+
+        <img class="wallet-child" src="../../imgs/Customers/line.png"/>
+
+        <img class="wallet-item" src="../../imgs/Customers/line.png"/>
+    </div>
+</div>
+
+<div id="addAddressContainer" class="popup-overlay" style="display:none">
+
+    <div class="addaddress">
+        <div class="addaddress-child">
+        </div>
+        <div class="addaddress-item">
+        </div>
+        <div class="direccion">Direccion</div>
+        <div class="ingrese-la-direccion-wrapper">
+            <div class="ingrese-la-direccion">Ingrese la direccion </div>
+        </div>
+        <div class="addaddress-inner" id="popuprectangleContainer">
+            <div class="instance-child">
+            </div>
+        </div>
+        <div class="admin-admin-admin">Admin Admin Admin Admin</div>
+        <div class="crear">Crear </div>
+        <div class="rectangle-div" id="popuprectangleContainer1">
+            <div class="instance-item">
+            </div>
+        </div>
+        <div class="cancelar">Cancelar</div>
+    </div>
+
+
+</div>
+
+
+
+<script>
+    var popuprectangleContainer = document.getElementById("popuprectangleContainer");
+    if(popuprectangleContainer) {
+        popuprectangleContainer.addEventListener("click", function (e) {
+            // Add your code here
+        });
+    }
+
+    var popuprectangleContainer1 = document.getElementById("popuprectangleContainer1");
+    if(popuprectangleContainer1) {
+        popuprectangleContainer1.addEventListener("click", function (e) {
+            // Add your code here
+        });
+    }
+
+    var groupContainer = document.getElementById("groupContainer");
+    if(groupContainer) {
+        groupContainer.addEventListener("click", function (e) {
+            // Add your code here
+        });
+    }
+
+    var editPlusCircleOutline = document.getElementById("editPlusCircleOutline");
+    if(editPlusCircleOutline) {
+        editPlusCircleOutline.addEventListener("click", function (e) {
+            // Add your code here
+        });
+    }
+
+    var groupContainer5 = document.getElementById("groupContainer5");
+    if(groupContainer5) {
+        groupContainer5.addEventListener("click", function () {
+            var popup = document.getElementById("addAddressContainer");
+            if(!popup) return;
+            var popupStyle = popup.style;
+            if(popupStyle) {
+                popupStyle.display = "flex";
+                popupStyle.zIndex = 100;
+                popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+                popupStyle.alignItems = "center";
+                popupStyle.justifyContent = "center";
+            }
+            popup.setAttribute("closable", "");
+
+            var onClick = popup.onClick || function(e) {
+                if(e.target === popup && popup.hasAttribute("closable")) {
+                    popupStyle.display = "none";
+                }
+            };
+            popup.addEventListener("click", onClick);
+        });
+    }
+
+    var iconTrash = document.getElementById("iconTrash");
+    if(iconTrash) {
+        iconTrash.addEventListener("click", function (e) {
+            // Add your code here
+        });
+    }</script></body>
+</html>

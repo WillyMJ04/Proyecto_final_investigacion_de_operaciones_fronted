@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../CSS/Vehicle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap">
+    <title>Selección de Vehículo</title>
+</head>
+<body>
+
+<div class="seleccionvehiculo">
+    <div class="header">
+        <div class="back-button">
+        <img class="chevron-icon" src="../../imgs/Pilots/chevron-left-simple.png"/></div>
+        <p class="header-text">Selecciona tu tipo de vehículo</p>
+    </div>
+    <b class="tipo-de-servicio">Tipo de servicio</b>
+
+    <div class="vehicle-grid">
+        <div class="vehicle-option" id="groupContainer1">
+            <div class="vehicle-text">Motociclista</div>
+            <img class="vehicle-icon" src="../../imgs/Pilots/delivery-man 1.png" alt="Motociclista">
+            <div class="chevron-wrapper">
+                <img class="chevron-icon" src="../../imgs/Pilots/chevron-right-simple.png" alt="Chevron">
+            </div>
+        </div>
+
+        <div class="vehicle-option" id="groupContainer3">
+            <div class="vehicle-text">Camión</div>
+            <img class="vehicle-icon" src="../../imgs/Pilots/truck_delivery.png" alt="Camión">
+            <div class="chevron-wrapper">
+                <img class="chevron-icon" src="../../imgs/Pilots/chevron-right-simple.png" alt="Chevron">
+            </div>
+        </div>
+
+        <div class="vehicle-option" id="groupContainer2">
+            <div class="vehicle-text">Carro</div>
+            <img class="vehicle-icon" src="../../imgs/Pilots/car_delivery.png" alt="Carro">
+            <div class="chevron-wrapper">
+                <img class="chevron-icon" src="../../imgs/Pilots/chevron-right-simple.png" alt="Chevron">
+            </div>
+        </div>
+
+        <div class="vehicle-option" id="groupContainer">
+            <div class="vehicle-text">Camión Mediano</div>
+            <img class="vehicle-icon" src="../../imgs/Pilots/truck_delivery.png" alt="Camión Mediano">
+            <div class="chevron-wrapper">
+                <img class="chevron-icon" src="../../imgs/Pilots/chevron-right-simple.png" alt="Chevron">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.back-button').addEventListener('click', function () {
+        // Código para retroceder
+        window.history.back();
+    });
+
+    document.querySelectorAll('.vehicle-option').forEach(container => {
+        container.addEventListener('click', function () {
+            // Código para seleccionar el tipo de vehículo
+        });
+    });
+</script>
+
+</body>
+</html>

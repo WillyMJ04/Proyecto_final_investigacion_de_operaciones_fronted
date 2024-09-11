@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;800;900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" />
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/PersonalInfo.css">
+
+
+</head>
+<body>
+
+<div class="informacionpersonal-parent">
+    <div class="informacionpersonal">
+        <div class="informacion-personal">Informacion Personal</div>
+        <div class="wrapper">
+        </div>
+
+        <div class="rectangle-parent" id="groupContainer">
+            <div class="group-child">
+            </div>
+            <img class="chevron-right-icon" src="../../imgs/Customers/chevron-left-simple-white.png"/></div>
+        <div class="mis-datos-personales-wrapper">
+            <div class="mis-datos-personales">Mis datos personales</div>
+        </div>
+        <div class="nombre-wrapper">
+            <div class="nombre">Nombre</div>
+        </div>
+        <div class="fecha-de-nacimiento-parent">
+            <div class="fecha-de-nacimiento">Fecha de nacimiento</div>
+            <div class="admin-admin-admin">Admin Admin Admin Admin</div>
+            <img class="icon-edit-2" src="../../imgs/Customers/edit.png"/>
+            <div class="adminadmincom">admin@admin.com</div>
+            <div class="ddmmyyyy">DD/MM/YYYY</div>
+        </div>
+        <div class="numero-de-telefono-wrapper">
+            <div class="numero-de-telefono">Numero de telefono </div>
+        </div>
+        <div class="email-wrapper">
+            <div class="email">Email</div>
+        </div>
+        <img class="icon-edit-21" src="../../imgs/Customers/edit.png"/>
+        <div class="div1">+502 4999-5123</div>
+        <img class="icon-edit-22" src="../../imgs/Customers/edit.png"/>
+        <img class="icon-edit-23" src="../../imgs/Customers/edit.png"/>
+    </div>
+    <div class="frame">
+    </div>
+</div>
+
+<div id="updateEmailContainer" class="popup-overlay" style="display:none">
+
+    <div class="updateemail">
+        <div class="ingrese-su-e-mail-wrapper">
+            <div class="ingrese-su-e-mail">Ingrese su e-mail</div>
+        </div>
+        <div class="rectangle-parent2">
+            <div class="group-child2">
+            </div>
+            <div class="adminadmincom1">admin@admin.com</div>
+        </div>
+        <div class="instance-parent4">
+            <div class="rectangle-wrapper3">
+                <div class="instance-child4">
+                </div>
+            </div>
+            <div class="actualizar3">Actualizar</div>
+        </div>
+        <div class="instance-parent5">
+            <div class="rectangle-wrapper3">
+                <div class="instance-child5">
+                </div>
+            </div>
+            <div class="cancelar3">Cancelar</div>
+        </div>
+    </div>
+
+
+</div>
+
+<div id="updateNameContainer" class="popup-overlay" style="display:none">
+
+    <div class="updatename">
+        <div class="ingrese-su-nombre-wrapper">
+            <div class="ingrese-su-nombre">Ingrese su nombre</div>
+        </div>
+        <div class="rectangle-parent1">
+            <div class="group-child1">
+            </div>
+            <div class="admin-admin-admin1">Admin Admin Admin Admin</div>
+        </div>
+        <div class="instance-parent2">
+            <div class="rectangle-wrapper1">
+                <div class="instance-child2">
+                </div>
+            </div>
+            <div class="actualizar2">Actualizar</div>
+        </div>
+        <div class="instance-parent3">
+            <div class="rectangle-wrapper1">
+                <div class="instance-child3">
+                </div>
+            </div>
+            <div class="cancelar2">Cancelar</div>
+        </div>
+    </div>
+
+
+</div>
+
+<div id="updatePHoneContainer" class="popup-overlay" style="display:none">
+
+    <div class="updatephone">
+        <div class="ingrese-su-numero-de-telefono-wrapper">
+            <div class="ingrese-su-numero">Ingrese su numero de telefono</div>
+        </div>
+        <div class="group-div">
+            <div class="group-inner">
+            </div>
+            <div class="div2">+502 4999-5123</div>
+        </div>
+        <div class="instance-container">
+            <div class="rectangle-frame">
+                <div class="instance-inner">
+                </div>
+            </div>
+            <div class="actualizar1">Actualizar</div>
+        </div>
+        <div class="instance-parent1">
+            <div class="rectangle-frame">
+                <div class="instance-child1">
+                </div>
+            </div>
+            <div class="cancelar1">Cancelar</div>
+        </div>
+    </div>
+
+
+</div>
+
+<div id="updateBirthdayContainer" class="popup-overlay" style="display:none">
+
+    <div class="updatebirthday">
+        <div class="ingrese-su-fecha-de-nacimiento-wrapper">
+            <div class="ingrese-su-fecha">Ingrese su Fecha de nacimiento</div>
+        </div>
+        <div class="rectangle-group">
+            <div class="group-item">
+            </div>
+            <div class="ddmmyyyy1">DD/MM/YYYY</div>
+        </div>
+        <div class="instance-parent" id="popupgroupContainer2">
+            <div class="rectangle-wrapper" id="popuprectangleContainer">
+                <div class="instance-child">
+                </div>
+            </div>
+            <div class="actualizar">Actualizar</div>
+        </div>
+        <div class="instance-group" id="popupgroupContainer3">
+            <div class="rectangle-container">
+                <div class="instance-item">
+                </div>
+            </div>
+            <div class="cancelar">Cancelar</div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<script>
+    var popupgroupContainer2 = document.getElementById("popupgroupContainer2");
+    if(popupgroupContainer2) {
+        popupgroupContainer2.addEventListener("click", function (e) {
+            window.location.href = "./Component.html"
+        });
+    }
+
+    var popupgroupContainer3 = document.getElementById("popupgroupContainer3");
+    if(popupgroupContainer3) {
+        popupgroupContainer3.addEventListener("click", function (e) {
+            window.location.href = "./Component.html"
+        });
+    }
+
+    var popupgroupContainer2 = document.getElementById("popupgroupContainer2");
+    if(popupgroupContainer2) {
+        popupgroupContainer2.addEventListener("click", function (e) {
+            window.location.href = "./Component.html"
+        });
+    }
+
+    var popupgroupContainer3 = document.getElementById("popupgroupContainer3");
+    if(popupgroupContainer3) {
+        popupgroupContainer3.addEventListener("click", function (e) {
+            window.location.href = "./Component.html"
+        });
+    }
+
+    var popupgroupContainer2 = document.getElementById("popupgroupContainer2");
+    if(popupgroupContainer2) {
+        popupgroupContainer2.addEventListener("click", function (e) {
+            window.location.href = "./Component.html"
+        });
+    }
+
+    var popupgroupContainer3 = document.getElementById("popupgroupContainer3");
+    if(popupgroupContainer3) {
+        popupgroupContainer3.addEventListener("click", function (e) {
+            window.location.href = "./Component.html"
+        });
+    }
+
+    var popuprectangleContainer = document.getElementById("popuprectangleContainer");
+    if(popuprectangleContainer) {
+        popuprectangleContainer.addEventListener("click", function (e) {
+            window.location.href = "./Component.html"
+        });
+    }
+
+    var popupgroupContainer2 = document.getElementById("popupgroupContainer2");
+    if(popupgroupContainer2) {
+        popupgroupContainer2.addEventListener("click", function (e) {
+            window.location.href = "./Component.html"
+        });
+    }
+
+    var popupgroupContainer3 = document.getElementById("popupgroupContainer3");
+    if(popupgroupContainer3) {
+        popupgroupContainer3.addEventListener("click", function (e) {
+            window.location.href = "./Component.html"
+        });
+    }
+
+    var groupContainer = document.getElementById("groupContainer");
+    if(groupContainer) {
+        groupContainer.addEventListener("click", function (e) {
+            // Add your code here
+        });
+    }
+
+    var iconEdit2 = document.getElementById("iconEdit2");
+    if(iconEdit2) {
+        iconEdit2.addEventListener("click", function () {
+            var popup = document.getElementById("updateEmailContainer");
+            if(!popup) return;
+            var popupStyle = popup.style;
+            if(popupStyle) {
+                popupStyle.display = "flex";
+                popupStyle.zIndex = 100;
+                popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+                popupStyle.alignItems = "center";
+                popupStyle.justifyContent = "center";
+            }
+            popup.setAttribute("closable", "");
+
+            var onClick = popup.onClick || function(e) {
+                if(e.target === popup && popup.hasAttribute("closable")) {
+                    popupStyle.display = "none";
+                }
+            };
+            popup.addEventListener("click", onClick);
+        });
+    }
+
+    var iconEdit2 = document.getElementById("iconEdit2");
+    if(iconEdit2) {
+        iconEdit2.addEventListener("click", function () {
+            var popup = document.getElementById("updateNameContainer");
+            if(!popup) return;
+            var popupStyle = popup.style;
+            if(popupStyle) {
+                popupStyle.display = "flex";
+                popupStyle.zIndex = 100;
+                popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+                popupStyle.alignItems = "center";
+                popupStyle.justifyContent = "center";
+            }
+            popup.setAttribute("closable", "");
+
+            var onClick = popup.onClick || function(e) {
+                if(e.target === popup && popup.hasAttribute("closable")) {
+                    popupStyle.display = "none";
+                }
+            };
+            popup.addEventListener("click", onClick);
+        });
+    }
+
+    var iconEdit21 = document.getElementById("iconEdit21");
+    if(iconEdit21) {
+        iconEdit21.addEventListener("click", function () {
+            var popup = document.getElementById("updatePHoneContainer");
+            if(!popup) return;
+            var popupStyle = popup.style;
+            if(popupStyle) {
+                popupStyle.display = "flex";
+                popupStyle.zIndex = 100;
+                popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+                popupStyle.alignItems = "center";
+                popupStyle.justifyContent = "center";
+            }
+            popup.setAttribute("closable", "");
+
+            var onClick = popup.onClick || function(e) {
+                if(e.target === popup && popup.hasAttribute("closable")) {
+                    popupStyle.display = "none";
+                }
+            };
+            popup.addEventListener("click", onClick);
+        });
+    }
+
+    var iconEdit22 = document.getElementById("iconEdit22");
+    if(iconEdit22) {
+        iconEdit22.addEventListener("click", function () {
+            var popup = document.getElementById("updateBirthdayContainer");
+            if(!popup) return;
+            var popupStyle = popup.style;
+            if(popupStyle) {
+                popupStyle.display = "flex";
+                popupStyle.zIndex = 100;
+                popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+                popupStyle.alignItems = "center";
+                popupStyle.justifyContent = "center";
+            }
+            popup.setAttribute("closable", "");
+
+            var onClick = popup.onClick || function(e) {
+                if(e.target === popup && popup.hasAttribute("closable")) {
+                    popupStyle.display = "none";
+                }
+            };
+            popup.addEventListener("click", onClick);
+        });
+    }</script></body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Register.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" />
+    <script src="../JAVASCRIPT/Register.js" defer></script>
+
+</head>
+<body>
+
+<div class="register">
+    <b class="hola-registrate-ahora-container">
+        <p class="hola">Hola</p>
+        <p class="hola">Regístrate ahora.</p>
+    </b>
+    <div class="form-group">
+        <div class="text-field-outline-text">
+            <div class="rectangle"></div>
+            <input class="input" type="email" id="email" placeholder="Correo" required>
+            <img class="user-user" src="../../imgs/Customers/mail.png" alt="Correo">
+        </div>
+        <div class="text-field-outline-text1">
+            <div class="rectangle"></div>
+            <input class="input" type="text" id="name" placeholder="Nombre" required>
+            <img class="user-user" src="../../imgs/Customers/Person.png" alt="Nombre">
+        </div>
+        <div class="text-field-outline-text2">
+            <div class="rectangle"></div>
+            <input class="input" type="password" id="password" placeholder="Contraseña" required>
+            <img class="user-user" src="../../imgs/Customers/Password.png" alt="Contraseña">
+        </div>
+        <div class="text-field-outline-text3">
+            <div class="rectangle"></div>
+            <input class="input" type="tel" id="phone" placeholder="Teléfono" required>
+            <img class="user-user" src="../../imgs/Customers/telephone.png" alt="Teléfono">
+        </div>
+    </div>
+    <div class="selection-control-checkbox-parent">
+        <div class="checkbox-container">
+            <input type="checkbox" id="termsAndConditions" name="termsAndConditions" required>
+            <label for="termsAndConditions">He leído y acepto los <span class="terminos-y-condiciones">Términos y Condiciones.</span></label>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+            <label for="privacyPolicy">¿Usted ha leído y acepta los términos y condiciones para el tratamiento de sus datos personales contenidos en la <span class="terminos-y-condiciones">Política de Privacidad Web</span>?</label>
+        </div>
+    </div>
+    <div class="rectangle-parent" id="rectangleContainer">
+        <div class="instance-child"></div>
+        <button class="get-started" id="registerButton" disabled>Regístrate</button>
+        <img class="chevrons-right-icon" src="../../imgs/Customers/chevrons-right.png" alt="Chevron Icon">
+    </div>
+    <div class="rectangle-group">
+        <div class="instance-item"></div>
+        <div class="get-started1" id="getStartedText">Iniciar Sesión</div>
+        <img class="chevrons-right-icon" src="../../imgs/Customers/chevrons-right.png" alt="Chevron Icon">
+    </div>
+    <div class="text">
+        <div class="style-3-container" id="style3">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
