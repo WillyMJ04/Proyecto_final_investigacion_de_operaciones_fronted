@@ -346,14 +346,7 @@
     width: 266px;
     height: 363px;
 }
-.delivery-man-1-icon {
-    position: absolute;
-    top: 0px;
-    left: 17px;
-    width: 72px;
-    height: 72px;
-    object-fit: cover;
-}
+
 .detalles-de-empleados {
     position: absolute;
     top: 13px;
