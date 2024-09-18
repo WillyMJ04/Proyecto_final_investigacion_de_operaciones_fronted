@@ -110,7 +110,7 @@
     position: absolute;
     top: 5px;
     left: 213px;
-    font-size: 24px;
+    font-size: 35px;
     line-height: 32px;
 }
 .search-area-child {
@@ -513,17 +513,21 @@
 }
 .transportexdashboard {
     position: absolute;
+    display: flex;
+    flex-wrap: wrap;
     top: 0px;
     left: 0px;
     background-color: #e5eaff;
-    width: 1440px;
+    width: 100%;
     height: 960px;
     overflow: hidden;
 }
 .transportexdashboard-parent {
     width: 100%;
+    display:flex;
+    flex-wrap:wrap;
     position: relative;
-    height: 960px;
+    height: 1000px;
     text-align: left;
     font-size: 14px;
     color: #fff;
@@ -543,5 +547,9 @@ th {
     background-color: #f2f2f2;
 }
 .cliente-img{
-width: 1400px;
+width: 100%;
+display: flex;
+}
+.home{
+
 }
