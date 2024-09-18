@@ -360,7 +360,7 @@
     left: 0px;
     border-radius: 10px;
     background-color: #fff;
-    width: 884px;
+    width: 1200px;
     height: 613px;
     overflow: hidden;
     font-size: 12px;
@@ -480,14 +480,6 @@
     width: 79px;
     height: 24px;
 }
-.group-child {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color: rgba(217, 217, 217, 0.25);
-    width: 187px;
-    height: 39px;
-}
 .jobs4 {
     position: absolute;
     top: 0px;
@@ -549,4 +541,7 @@ th, td {
 }
 th {
     background-color: #f2f2f2;
+}
+.cliente-img{
+width: 1400px;
 }
