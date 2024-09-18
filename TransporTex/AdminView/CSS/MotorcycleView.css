@@ -1,0 +1,571 @@
+.subtract-icon {
+    position: relative;
+    width: 65px;
+    height: 65px;
+}
+.subtract-icon1 {
+    position: relative;
+    border-radius: 30px;
+    width: 64.7px;
+    height: 64.9px;
+}
+.div {
+    position: absolute;
+    top: 54px;
+    left: 185px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.inc {
+    position: absolute;
+    top: 98px;
+    left: 30px;
+    font-weight: 600;
+    color: #6c6cd9;
+}
+.total-de-pedidos {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    color: rgba(84, 84, 140, 0.8);
+}
+.arrow-up-icon {
+    position: absolute;
+    top: 100px;
+    left: 16px;
+    width: 10px;
+    height: 10px;
+    object-fit: contain;
+}
+.b {
+    position: absolute;
+    top: 48px;
+    left: 16px;
+    font-size: 24px;
+}
+.more-icon {
+    position: absolute;
+    top: 0px;
+    left: 236px;
+    width: 24px;
+    height: 24px;
+}
+.card-5 {
+    position: absolute;
+    top: 132px;
+    left: 6px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 266px;
+    height: 126px;
+    overflow: hidden;
+}
+.subtract-icon3 {
+    position: relative;
+    border-radius: 30px;
+    width: 50.6px;
+    height: 64.9px;
+}
+.inc1 {
+    position: absolute;
+    top: 98px;
+    left: 30px;
+    font-weight: 600;
+    color: #ffbf00;
+}
+.card-6 {
+    position: absolute;
+    top: 132px;
+    left: 304px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 266px;
+    height: 126px;
+    overflow: hidden;
+}
+.subtract-icon5 {
+    position: relative;
+    border-radius: 30px;
+    width: 32.5px;
+    height: 64.3px;
+}
+.inc2 {
+    position: absolute;
+    top: 98px;
+    left: 30px;
+    font-weight: 600;
+    color: #ff784d;
+}
+.card-7 {
+    position: absolute;
+    top: 132px;
+    left: 602px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 266px;
+    height: 126px;
+    overflow: hidden;
+}
+.motocicletas {
+    position: absolute;
+    top: 5px;
+    left: 213px;
+    font-size: 24px;
+    line-height: 32px;
+}
+.search-area-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 8px;
+    background-color: #000000;
+    width: 328px;
+    height: 32px;
+}
+.search-area-item {
+    position: absolute;
+    top: 0px;
+    left: 288px;
+    border-radius: 8px;
+    background-color: #6674bb;
+    width: 40px;
+    height: 32px;
+}
+.search-icon {
+    position: absolute;
+    top: 6px;
+    left: 298px;
+    width: 20px;
+    height: 20px;
+}
+.search {
+    position: absolute;
+    top: 4px;
+    left: 16px;
+    line-height: 24px;
+}
+.search-area {
+    position: absolute;
+    top: 4px;
+    left: 540px;
+    width: 328px;
+    height: 32px;
+    color: #fff;
+}
+.card-2-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 266px;
+    height: 363px;
+}
+.detalles {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    font-size: 12px;
+}
+.month {
+    position: absolute;
+    top: 32px;
+    left: 183px;
+}
+.total-de-pedidos1 {
+    position: absolute;
+    top: 96px;
+    left: 58px;
+}
+.total-de-trabajadores {
+    position: absolute;
+    top: 151px;
+    left: 58px;
+    display: inline-block;
+    width: 57px;
+    height: 20px;
+}
+.cancelaciones1 {
+    position: absolute;
+    top: 206px;
+    left: 58px;
+}
+.en-proceso {
+    position: absolute;
+    top: 261px;
+    left: 58px;
+}
+.completados {
+    position: absolute;
+    top: 316px;
+    left: 58px;
+}
+.card-2-item {
+    position: absolute;
+    top: 131px;
+    left: 32px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 203px;
+    height: 1px;
+}
+.card-2-inner {
+    position: absolute;
+    top: 186px;
+    left: 32px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 203px;
+    height: 1px;
+}
+.line-div {
+    position: absolute;
+    top: 241px;
+    left: 32px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 203px;
+    height: 1px;
+}
+.card-2-child1 {
+    position: absolute;
+    top: 296px;
+    left: 32px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 203px;
+    height: 1px;
+}
+.chevron-sort-down-icon {
+    position: absolute;
+    top: 21px;
+    left: 215px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+}
+.circle-icon {
+    position: absolute;
+    top: 98px;
+    left: 32px;
+    width: 10px;
+    height: 10px;
+}
+.circle-icon1 {
+    position: absolute;
+    top: 153px;
+    left: 32px;
+    width: 10px;
+    height: 10px;
+}
+.circle-icon2 {
+    position: absolute;
+    top: 208px;
+    left: 32px;
+    width: 10px;
+    height: 10px;
+}
+.circle-icon3 {
+    position: absolute;
+    top: 263px;
+    left: 32px;
+    width: 10px;
+    height: 10px;
+}
+.circle-icon4 {
+    position: absolute;
+    top: 318px;
+    left: 32px;
+    width: 10px;
+    height: 10px;
+}
+.group-icon {
+    position: absolute;
+    top: 105px;
+    left: 130px;
+    max-height: 100%;
+    width: 70px;
+}
+.card-2-child2 {
+    position: absolute;
+    top: 160px;
+    left: 130px;
+    max-height: 100%;
+    width: 70px;
+}
+.card-2-child3 {
+    position: absolute;
+    top: 214px;
+    left: 130px;
+    max-height: 100%;
+    width: 70px;
+}
+.card-2-child4 {
+    position: absolute;
+    top: 269px;
+    left: 130px;
+    max-height: 100%;
+    width: 70px;
+}
+.card-2-child5 {
+    position: absolute;
+    top: 321px;
+    left: 130px;
+    width: 70px;
+    height: 4px;
+}
+.div3 {
+    position: absolute;
+    top: 96px;
+    left: 211px;
+}
+.div4 {
+    position: absolute;
+    top: 151px;
+    left: 213px;
+}
+.div5 {
+    position: absolute;
+    top: 205px;
+    left: 212px;
+}
+.div6 {
+    position: absolute;
+    top: 260px;
+    left: 212px;
+}
+.div7 {
+    position: absolute;
+    top: 316px;
+    left: 213px;
+}
+.card-2 {
+    position: absolute;
+    top: 290px;
+    left: 907px;
+    width: 266px;
+    height: 363px;
+}
+.delivery-man-1-icon {
+    position: absolute;
+    top: 0px;
+    left: 17px;
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+}
+.detalles-de-empleados {
+    position: absolute;
+    top: 13px;
+    left: 21px;
+    white-space: pre-wrap;
+}
+.nombre {
+    position: absolute;
+    top: 36px;
+    left: 21px;
+}
+.apelllidos {
+    position: absolute;
+    top: 36px;
+    left: 115px;
+}
+.dpi {
+    position: absolute;
+    top: 36px;
+    left: 217px;
+}
+.fecha-de-nacimiento {
+    position: absolute;
+    top: 36px;
+    left: 265px;
+}
+.numero-de-licencia {
+    position: absolute;
+    top: 36px;
+    left: 399px;
+}
+.card-8 {
+    position: absolute;
+    top: 290px;
+    left: 0px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 884px;
+    height: 613px;
+    overflow: hidden;
+    font-size: 12px;
+}
+.mid-section {
+    position: absolute;
+    top: 22px;
+    left: 214px;
+    width: 1173px;
+    height: 903px;
+    font-size: 10px;
+    color: #000;
+}
+.menunavigation-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #743d73;
+    width: 187px;
+    height: 960px;
+}
+.logo {
+    position: absolute;
+    top: 31px;
+    left: 19.77px;
+    line-height: 24px;
+    display: inline-block;
+    width: 131px;
+}
+.menunavigation {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 187px;
+    height: 960px;
+    font-size: 28px;
+    font-family: Baloo;
+}
+.job-icon {
+    width: 24px;
+    position: relative;
+    height: 24px;
+}
+.dashboard {
+    position: relative;
+    line-height: 24px;
+}
+.jobs {
+    position: absolute;
+    top: 112px;
+    left: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+}
+.jobs1 {
+    position: absolute;
+    top: 0px;
+    left: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.truck-1-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
+.jobs-parent {
+    position: absolute;
+    top: 279px;
+    left: 32px;
+    width: 91px;
+    height: 24px;
+}
+.jobs-group {
+    position: absolute;
+    top: 241px;
+    left: 32px;
+    width: 146px;
+    height: 24px;
+}
+.jobs3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.jobs-wrapper {
+    position: absolute;
+    top: 0px;
+    left: 47px;
+    width: 32px;
+    height: 24px;
+}
+.compact-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 28px;
+    height: 24px;
+    overflow: hidden;
+}
+.group-parent {
+    position: absolute;
+    top: 203px;
+    left: 32px;
+    width: 79px;
+    height: 24px;
+}
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(217, 217, 217, 0.25);
+    width: 187px;
+    height: 39px;
+}
+.jobs4 {
+    position: absolute;
+    top: 0px;
+    left: 42.63px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.delivery-man-1-icon1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 28.2px;
+    height: 24px;
+    object-fit: cover;
+}
+.jobs-container {
+    position: absolute;
+    top: 5px;
+    left: 35.85px;
+    width: 113.6px;
+    height: 24px;
+}
+.rectangle-parent {
+    position: absolute;
+    top: 164px;
+    left: 0px;
+    width: 187px;
+    height: 39px;
+}
+.transportexdashboard {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #e5eaff;
+    width: 1440px;
+    height: 960px;
+    overflow: hidden;
+}
+.transportexdashboard-parent {
+    width: 100%;
+    position: relative;
+    height: 960px;
+    text-align: left;
+    font-size: 14px;
+    color: #fff;
+    font-family: Cabin;
+}
+
