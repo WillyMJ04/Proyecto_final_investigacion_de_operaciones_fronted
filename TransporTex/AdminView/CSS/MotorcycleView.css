@@ -118,7 +118,7 @@
     top: 0px;
     left: 0px;
     border-radius: 8px;
-    background-color: #000000;
+    background-color: #6674bb;
     width: 328px;
     height: 32px;
 }
@@ -360,31 +360,7 @@
     left: 21px;
     white-space: pre-wrap;
 }
-.nombre {
-    position: absolute;
-    top: 36px;
-    left: 21px;
-}
-.apelllidos {
-    position: absolute;
-    top: 36px;
-    left: 115px;
-}
-.dpi {
-    position: absolute;
-    top: 36px;
-    left: 217px;
-}
-.fecha-de-nacimiento {
-    position: absolute;
-    top: 36px;
-    left: 265px;
-}
-.numero-de-licencia {
-    position: absolute;
-    top: 36px;
-    left: 399px;
-}
+
 .card-8 {
     position: absolute;
     top: 290px;
@@ -569,3 +545,15 @@
     font-family: Cabin;
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
