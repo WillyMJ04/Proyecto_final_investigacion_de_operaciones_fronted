@@ -1,10 +1,53 @@
 import Navbar from "./components/Navbar";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Hero from "./components/Hero";
+import { authStore } from "./store/authStore";
+import { useQuery } from "@tanstack/react-query";
+import { getUsers } from "./services/jsonService";
+
 const App = () => {
+  const [count, setCounter] = useState(0);
+  const { authState, setAuth, setUsers, users } = authStore();
+
+  const {data, isPending, error} = useQuery({
+    queryKey: ["users"],
+    queryFn : getUsers,
+  })
+
+  useEffect(()=>{
+    setUsers(data)
+  }, [data])
+
   return (
     <>
-      <Navbar />
+      <div className="content pr-96 mr-96">
+        {/* <Navbar /> */}
+        <h1>Bienvenido a la sección de Trabajos {count}</h1>
+        <p>
+          Selecciona una categoría en la barra de navegación para ver más
+          detalles.
+        </p>
+        <p>{JSON.stringify({authState, users})}</p>
+        <button
+          onClick={() => {
+            setAuth({
+              isLoggedIn: true,
+              token: 123,
+              userId: 3,
+            });
+          }}
+        >
+          Cambiar estado global
+        </button>
+        <button
+          onClick={() => {
+            setCounter(prev => prev + 1)
+          }}
+        >
+          Cambiar estado local
+        </button>
+      </div>
+
       <Hero />
       <div className="transportexdashboard-parent">
         <div className="transportexdashboard">
@@ -12,9 +55,7 @@ const App = () => {
             <div className="card-5">
               <div className="total-de-pedidos">Total de Pedidos </div>
 
-              <b className="b">
-                5852
-              </b>
+              <b className="b">5852</b>
               {/* <img className="more-icon" alt="" src="../../imgs/AdminView/more.svg"> */}
             </div>
             <div className="card-6">
@@ -29,7 +70,7 @@ const App = () => {
               <b className="b">1035</b>
               {/* <img className="more-icon" alt="" src="../../imgs/AdminView/more.svg"> */}
             </div>
-           
+
             <div className="search-area">
               <div className="search-area-child"></div>
               <div className="search-area-item"></div>
