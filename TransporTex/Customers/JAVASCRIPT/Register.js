@@ -6,10 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const termsCheckbox = document.getElementById('termsAndConditions');
     const privacyCheckbox = document.getElementById('privacyPolicy');
     const registerButton = document.getElementById('registerButton');
-    const loginButton = document.getElementById('getStartedText'); // Botón Iniciar Sesión
+    const loginButton = document.getElementById('getStartedText');
 
     function validateForm() {
-        // Expresión regular ajustada para aceptar múltiples subdominios
         const emailValid = emailInput.value.match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$/);
         const nameValid = nameInput.value.match(/^[A-Za-z\s]+$/);
         const phoneValid = phoneInput.value.match(/^\d{8}$/);

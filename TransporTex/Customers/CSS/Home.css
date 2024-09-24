@@ -1,29 +1,28 @@
 .home {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centrado vertical */
-    align-items: center; /* Centrado horizontal */
-    min-height: 100vh; /* Ocupar toda la pantalla */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background-color: #fff;
     text-align: center;
     font-size: 12px;
     color: #000;
     font-family: 'Roboto', sans-serif;
-    padding-bottom: 60px; /* Espacio para que el menú inferior sea visible */
+    padding-bottom: 60px;
 }
 
 .content-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Distribuir contenido a lo largo del contenedor */
-    align-items: center; /* Asegura el centrado horizontal */
+    justify-content: space-between;
+    align-items: center;
     max-width: 375px;
     width: 100%;
     height: 100%;
     padding: 20px;
     box-sizing: border-box;
 }
-
 
 img {
     max-width: 100%;
@@ -52,7 +51,7 @@ img {
     font-size: 11px;
 }
 
-.paquete, .construccion, .electronicos {
+.paquete, .construccion, .electronicos, .otros {
     font-size: 21px;
 }
 
@@ -186,20 +185,31 @@ img {
     width: 102px;
     height: 22px;
 }
-
+.productos-input {
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 188px;
+    height: 57px;
+    background-color: white;
+    border-radius: 50px;
+    border-color: #fe6f23;
+    font-size: 19.62px;
+    outline: none;
+    z-index: 2;
+}
 .search {
     position: absolute;
-    top: 14.85px;
-    left: 178.87px;
-    width: 22.4px;
-    height: 23.8px;
+    top: 23px;
+    left: 210px;
+    width: 25px;
+    height: 25px;
     overflow: hidden;
+    z-index: 1;
 }
 
 .rectangle-group {
-    position: absolute;
-    top: 8.04px;
-    left: 6.32px;
+    position: relative;
     width: 244.5px;
     height: 54.4px;
 }
@@ -441,6 +451,7 @@ img {
     height: 70.1px;
     cursor: pointer;
 }
+
 .construccion {
     position: absolute;
     top: 187px;
@@ -608,22 +619,22 @@ img {
     height: 55px;
     object-fit: contain;
     cursor: pointer;
+}
 
-/ /* Ajustes para pantallas grandes */
-@media only screen and (min-width: 1024 px) {
+/* Ajustes para pantallas grandes */
+@media only screen and (min-width: 1024px) {
     .content-wrapper {
         max-width: 600px;
     }
 }
 
-    /* Ajustes para pantallas pequeñas */
-    @media only screen and (max-width: 767px) {
-        .home {
-            padding: 0 10px;
-        }
+/* Ajustes para pantallas pequeñas */
+@media only screen and (max-width: 767px) {
+    .home {
+        padding: 0 10px;
+    }
 
-        .content-wrapper {
-            padding: 0;
-        }
+    .content-wrapper {
+        padding: 0;
     }
 }

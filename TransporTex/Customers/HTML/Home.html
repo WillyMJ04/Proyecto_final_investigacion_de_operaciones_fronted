@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../CSS/Home.css">
     <link rel="stylesheet" href="../CSS/global.css">
     <title>Home</title>
+    <script src="../JAVASCRIPT/Home.js"></script>
 </head>
 <body>
 <div class="home">
@@ -35,9 +36,8 @@
         <div class="rectangle-parent">
             <div class="group-child"></div>
             <div class="rectangle-group">
-                <div class="group-item"></div>
-                <div class="productos">Productos</div>
-                <img class="search" src="../../imgs/Customers/Lupa.png" alt="Buscar">
+                <input type="text" id="searchInput" class="productos-input" placeholder="Productos" onfocus="hideIcon()" onblur="showIcon()">
+                <img id="searchIcon" class="search" src="../../imgs/Customers/Lupa.png" alt="Buscar">
             </div>
         </div>
 
@@ -61,7 +61,7 @@
                 <div class="group-child2"></div>
                 <div class="rectangle-parent2" id="groupContainer2">
                     <div class="group-child3"></div>
-                    <img class="chevron-right-icon1" src="../../imgs/Customers/chevron-right-simple-white.png" alt="Siguiente">
+                    <img id="firstChevron" class="chevron-right-icon1" src="../../imgs/Customers/chevron-right-simple-white.png" alt="Siguiente">
                 </div>
             </div>
             <img class="food" src="../../imgs/Customers/Hamburguer.png" alt="Comida">
@@ -73,7 +73,7 @@
                 <div class="group-child4"></div>
                 <div class="rectangle-parent4" id="groupContainer3">
                     <div class="group-child5"></div>
-                    <img class="chevron-right-icon2" src="../../imgs/Customers/chevron-right-simple-white.png" alt="Siguiente">
+                    <img id="chevronConstruccion" class="chevron-right-icon2" src="../../imgs/Customers/chevron-right-simple-white.png" alt="Siguiente">
                 </div>
             </div>
         </div>
@@ -85,7 +85,7 @@
                 <div class="group-child6"></div>
                 <div class="rectangle-parent6">
                     <div class="group-child7"></div>
-                    <img class="chevron-right-icon3" src="../../imgs/Customers/chevron-right-simple-white.png" alt="Siguiente">
+                    <img id="chevronElectronicos" class="chevron-right-icon3" src="../../imgs/Customers/chevron-right-simple-white.png" alt="Siguiente">
                 </div>
             </div>
             <b class="electronicos">Electrónicos</b>
@@ -109,7 +109,8 @@
             </div>
         </div>
 
-        <img class="carrier" src="../../imgs/Customers/carrier.png" alt="Transportista">
+        <img id="shoppingCart" class="carrier" src="../../imgs/Customers/carrier.png" alt="Transportista">
+
     </div>
 </div>
 </body>
