@@ -490,6 +490,16 @@ img {
     height: 50.6px;
 }
 
+group-child8{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 25.86px;
+    background-color: #fe6f23;
+    width: 4px;
+    height: 50.6px;
+}
+
 .chevron-right-icon3 {
     position: absolute;
     top: 12.65px;
@@ -498,7 +508,6 @@ img {
     height: 25.3px;
     overflow: hidden;
 }
-
 .rectangle-parent6 {
     position: absolute;
     top: 87.26px;
@@ -588,7 +597,7 @@ img {
     position: absolute;
     top: 70px;
     left: 20px;
-    width: 60px;
+    width: 45px;
     height: 60px;
 }
 
@@ -620,6 +629,25 @@ img {
     object-fit: contain;
     cursor: pointer;
 }
+.rectangle-parent-otros {
+    position: absolute;
+    top: 87.26px;
+    left: 78.77px;
+    width: 49px;
+    height: 50.6px;
+    cursor: pointer;
+}
+
+.group-child-otros {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 25.86px;
+    background-color: #fe6f23; /* Círculo naranja */
+    width: 49px;
+    height: 50.6px;
+}
+
 
 /* Ajustes para pantallas grandes */
 @media only screen and (min-width: 1024px) {

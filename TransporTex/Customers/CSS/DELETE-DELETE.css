@@ -1,15 +1,25 @@
-.tecnology-child {
+.hammer-icon {
     position: absolute;
-    top: 705px;
-    left: -28px;
-    max-height: 100%;
+    top: 1058px;
+    left: 510px;
+    border-radius: 200px;
+    width: 291px;
+    height: 335px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.group-child {
+    position: absolute;
+    top: 686.51px;
+    left: 0px;
     width: 434px;
+    height: 0px;
     object-fit: contain;
 }
-.tecnology-item {
+.group-item {
     position: absolute;
-    top: 701px;
-    left: -12px;
+    top: 682.51px;
+    left: 16px;
     border-top: 6px solid #fe6f23;
     box-sizing: border-box;
     width: 83px;
@@ -51,12 +61,11 @@
 }
 .profile {
     position: absolute;
-    top: 718.73px;
-    left: 303.62px;
+    top: 700.25px;
+    left: 331.62px;
     width: 32.3px;
     height: 44.4px;
     cursor: pointer;
-    font-size: 12px;
     color: #4a4b56;
 }
 .inicio {
@@ -78,12 +87,10 @@
 }
 .inicio-parent {
     position: absolute;
-    top: 717.7px;
-    left: 8.07px;
+    top: 699.22px;
+    left: 36.07px;
     width: 33.4px;
     height: 44.4px;
-    cursor: pointer;
-    font-size: 12px;
     color: #4a4b56;
 }
 .div {
@@ -92,12 +99,12 @@
 }
 .wrapper {
     position: absolute;
-    height: 2.25%;
-    width: 8.33%;
-    top: 2.31%;
-    right: 84.04%;
-    bottom: 95.44%;
-    left: 7.63%;
+    height: 2.42%;
+    width: 6.91%;
+    top: 0%;
+    right: 80.31%;
+    bottom: 97.58%;
+    left: 12.78%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -107,20 +114,20 @@
 }
 .frame-icon {
     position: absolute;
-    height: 1.54%;
-    width: 19.22%;
-    top: 2.73%;
-    right: 8.21%;
-    bottom: 95.74%;
-    left: 72.56%;
+    height: 1.65%;
+    width: 15.94%;
+    top: 0.44%;
+    right: 17.41%;
+    bottom: 97.9%;
+    left: 66.64%;
     max-width: 100%;
     overflow: hidden;
     max-height: 100%;
 }
-.tecnology-inner {
+.group-inner {
     position: absolute;
-    top: 693px;
-    left: 143.37px;
+    top: 674.51px;
+    left: 171.37px;
     width: 79px;
     height: 70.1px;
     cursor: pointer;
@@ -153,16 +160,15 @@
     overflow: hidden;
     max-height: 100%;
 }
-.group-container {
+.group-parent {
     position: absolute;
-    top: 715.65px;
-    left: 246.87px;
+    top: 697.16px;
+    left: 274.87px;
     width: 34px;
     height: 47.4px;
-    font-size: 12px;
     color: #4a4b56;
 }
-.group-child {
+.rectangle-div {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -171,7 +177,7 @@
     width: 258px;
     height: 70.6px;
 }
-.group-item {
+.group-child1 {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -180,12 +186,12 @@
     width: 244.5px;
     height: 54.4px;
 }
-.tecnologia {
+.productos {
     position: absolute;
     top: 16.96px;
     left: 20.68px;
     display: inline-block;
-    width: 142px;
+    width: 102px;
     height: 22px;
 }
 .iconsaxlinearsearchnormal1 {
@@ -205,22 +211,289 @@
 }
 .rectangle-parent {
     position: absolute;
-    top: 65px;
-    left: 20px;
+    top: 46.51px;
+    left: 48px;
     width: 258px;
     height: 70.6px;
     font-size: 19.62px;
     color: #a4a4a4;
 }
-.hammer-icon {
+.group-child2 {
     position: absolute;
-    top: 1058px;
-    left: 510px;
-    border-radius: 200px;
-    width: 291px;
-    height: 335px;
+    top: 0px;
+    left: 0px;
+    border-radius: 15.28px;
+    background-color: #f2f2f2;
+    width: 328px;
+    height: 90.7px;
+}
+.rectangle-wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 328px;
+    height: 90.7px;
+}
+.paquete {
+    position: absolute;
+    top: 17.37px;
+    left: 70.58px;
+}
+.rde4354324343 {
+    position: absolute;
+    top: 49.97px;
+    left: 66.51px;
+    font-size: 10.95px;
+}
+.group-child3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 13.79px;
+    background-color: #fe6f23;
+    width: 26.5px;
+    height: 26.5px;
+}
+.chevron-right-icon {
+    position: absolute;
+    top: 6.62px;
+    left: 6.62px;
+    width: 13.2px;
+    height: 13.2px;
     overflow: hidden;
+}
+.rectangle-container {
+    position: absolute;
+    top: 28px;
+    left: 272px;
+    width: 26.5px;
+    height: 26.5px;
+}
+.group-child4 {
+    position: absolute;
+    top: 29.6px;
+    left: 172.58px;
+    border-radius: 12.22px;
+    background-color: #1ee1ad;
+    width: 86.6px;
+    height: 24.4px;
+}
+.en-camino {
+    position: absolute;
+    top: 35.71px;
+    left: 187.86px;
+    font-size: 11.25px;
+    color: #fff;
+}
+.truck-1-icon {
+    position: absolute;
+    top: 17.37px;
+    left: 9.39px;
+    width: 48.9px;
+    height: 48.9px;
     object-fit: cover;
+}
+.group-container {
+    position: absolute;
+    top: 556.51px;
+    left: 46px;
+    width: 328px;
+    height: 90.7px;
+    font-size: 20.95px;
+}
+.group-child5 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 15.52px;
+    background-color: #f2f2f2;
+    width: 155px;
+    height: 160px;
+}
+.group-child6 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 25.86px;
+    background-color: #fe6f23;
+    width: 50px;
+    height: 50.6px;
+}
+.chevron-right-icon1 {
+    position: absolute;
+    top: 12.65px;
+    left: 12.49px;
+    width: 25px;
+    height: 25.3px;
+    overflow: hidden;
+}
+.rectangle-parent2 {
+    position: absolute;
+    top: 87.26px;
+    left: 80.26px;
+    width: 50px;
+    height: 50.6px;
+    cursor: pointer;
+}
+.rectangle-parent1 {
+    position: absolute;
+    top: 0px;
+    left: 5.03px;
+    width: 155px;
+    height: 160px;
+}
+.falafel-1-icon {
+    position: absolute;
+    top: 66.24px;
+    left: 0px;
+    width: 85.5px;
+    height: 84.6px;
+    object-fit: cover;
+}
+.comida {
+    position: absolute;
+    top: 26.5px;
+    left: 37.23px;
+    display: inline-block;
+    width: 74.5px;
+    height: 25.5px;
+}
+.group-div {
+    position: absolute;
+    top: 151.51px;
+    left: 43px;
+    width: 160px;
+    height: 160px;
+    font-size: 21.28px;
+}
+.group-child7 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 15.52px;
+    background-color: #f2f2f2;
+    width: 160px;
+    height: 160px;
+}
+.group-child8 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 25.86px;
+    background-color: #fe6f23;
+    width: 51.6px;
+    height: 50.6px;
+}
+.chevron-right-icon2 {
+    position: absolute;
+    top: 12.65px;
+    left: 12.9px;
+    width: 25.8px;
+    height: 25.3px;
+    overflow: hidden;
+}
+.rectangle-parent4 {
+    position: absolute;
+    top: 87.26px;
+    left: 82.87px;
+    width: 51.6px;
+    height: 50.6px;
+    cursor: pointer;
+}
+.rectangle-parent3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 160px;
+    height: 160px;
+}
+.group-wrapper {
+    position: absolute;
+    top: 150.51px;
+    left: 217px;
+    width: 160px;
+    height: 160px;
+}
+.construccion {
+    position: absolute;
+    top: 168.51px;
+    left: 235px;
+    font-size: 21.28px;
+    display: inline-block;
+    width: 129px;
+    height: 23px;
+}
+.compass-icon-1 {
+    position: absolute;
+    top: 221.51px;
+    left: 227px;
+    width: 64px;
+    height: 74px;
+    object-fit: cover;
+}
+.group-child9 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 15.52px;
+    background-color: #f2f2f2;
+    width: 152.1px;
+    height: 160px;
+}
+.group-child10 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 25.86px;
+    background-color: #fe6f23;
+    width: 49px;
+    height: 50.6px;
+}
+.chevron-right-icon3 {
+    position: absolute;
+    top: 12.65px;
+    left: 12.26px;
+    width: 24.5px;
+    height: 25.3px;
+    overflow: hidden;
+}
+.rectangle-parent6 {
+    position: absolute;
+    top: 87.26px;
+    left: 78.77px;
+    width: 49px;
+    height: 50.6px;
+}
+.rectangle-parent5 {
+    position: absolute;
+    top: 0px;
+    left: 7.9px;
+    width: 152.1px;
+    height: 160px;
+}
+.electronicos {
+    position: absolute;
+    top: 26px;
+    left: 18px;
+    display: inline-block;
+    width: 126px;
+    height: 46px;
+}
+.business-icon {
+    position: absolute;
+    top: 72.36px;
+    left: 0px;
+    width: 89.9px;
+    height: 81.5px;
+    overflow: hidden;
+}
+.group-parent1 {
+    position: absolute;
+    top: 357.51px;
+    left: 40px;
+    width: 160px;
+    height: 160px;
+    font-size: 21.28px;
 }
 .text {
     position: absolute;
@@ -271,241 +544,55 @@
     height: 31px;
     overflow: hidden;
 }
-.group-div {
+.group-parent2 {
     position: absolute;
-    top: 713px;
-    left: 73.45px;
+    top: 694.51px;
+    left: 101.45px;
     width: 63.4px;
     height: 49px;
     cursor: pointer;
-    font-size: 12px;
-}
-.group-inner {
-    position: absolute;
-    top: 0px;
-    left: 1px;
-    width: 60px;
-    height: 60px;
-}
-.computadora {
-    position: absolute;
-    top: 12px;
-    left: 0px;
-}
-.group-parent1 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 61px;
-    height: 60px;
-}
-.tecnology-inner1 {
-    position: absolute;
-    top: 170px;
-    left: 38px;
-    width: 61px;
-    height: 60px;
-    text-align: center;
 }
 .group-icon {
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 60px;
-    height: 60px;
+    width: 155px;
+    height: 160px;
 }
-.electro-domesticos {
+.otros {
     position: absolute;
-    top: 7px;
-    left: 3px;
-    white-space: pre-wrap;
+    top: 26px;
+    left: 13px;
     display: inline-block;
-    width: 55px;
-    height: 25px;
+    width: 126px;
+    height: 46px;
 }
-.tecnology-inner2 {
+.group-parent3 {
     position: absolute;
-    top: 170px;
-    left: 115px;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-}
-.rectangle-div {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 15.52px;
-    background-color: #f2f2f2;
-    width: 60px;
-    height: 60px;
-}
-.camaras {
-    position: absolute;
-    top: 12px;
-    left: 4.42px;
-    display: inline-block;
-    width: 52px;
-    height: 10.8px;
-}
-.tecnology-inner3 {
-    position: absolute;
-    top: 170px;
-    left: 183px;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-}
-.tecnology-inner4 {
-    position: absolute;
-    top: 170px;
-    left: 251px;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-}
-.group-child2 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 15.52px;
-    background-color: #f2f2f2;
-    width: 81px;
-    height: 79.6px;
-}
-.rectangle-frame {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 81px;
-    height: 79.6px;
-}
-.xxxx {
-    position: absolute;
-    top: 90px;
-    left: 23px;
-    display: inline-block;
-    width: 35px;
-    height: 12px;
-}
-.edit-plus-circle {
-    position: absolute;
-    top: 52.08px;
-    left: 50.86px;
-    width: 22.6px;
-    height: 22.3px;
-    overflow: hidden;
-}
-.group-parent5 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 81px;
-    height: 102px;
-}
-.tecnology-inner5 {
-    position: absolute;
-    top: 279px;
-    left: 38px;
-    width: 81px;
-    height: 102px;
-}
-.tecnology-inner6 {
-    position: absolute;
-    top: 279px;
-    left: 139px;
-    width: 81px;
-    height: 102px;
-}
-.tecnology-inner7 {
-    position: absolute;
-    top: 279px;
-    left: 232px;
-    width: 81px;
-    height: 102px;
-}
-.tecnology-inner8 {
-    position: absolute;
-    top: 415px;
-    left: 38px;
-    width: 81px;
-    height: 102px;
-}
-.tecnology-inner9 {
-    position: absolute;
-    top: 415px;
-    left: 139px;
-    width: 81px;
-    height: 102px;
-}
-.tecnology-inner10 {
-    position: absolute;
-    top: 415px;
-    left: 232px;
-    width: 81px;
-    height: 102px;
-}
-.tecnology-inner11 {
-    position: absolute;
-    top: 557px;
-    left: 38px;
-    width: 81px;
-    height: 102px;
-}
-.tecnology-inner12 {
-    position: absolute;
-    top: 557px;
-    left: 139px;
-    width: 81px;
-    height: 102px;
-}
-.tecnology-inner13 {
-    position: absolute;
-    top: 557px;
-    left: 232px;
-    width: 81px;
-    height: 102px;
-}
-.tecnologia1 {
-    position: absolute;
-    top: 239px;
-    left: 38px;
+    top: 358.51px;
+    left: 218px;
+    width: 155px;
+    height: 160px;
     font-size: 21.28px;
-    display: inline-block;
-    width: 144px;
-    height: 25px;
-}
-.hard-drive-icon {
-    position: absolute;
-    height: 3.13%;
-    width: 4.72%;
-    top: 25%;
-    right: 19.72%;
-    bottom: 71.88%;
-    left: 75.56%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-}
-.business-icon {
-    position: absolute;
-    top: 196px;
-    left: 200px;
-    width: 28px;
-    height: 29px;
-    overflow: hidden;
 }
 .iconsaxboldi3dcubescan {
     position: absolute;
-    top: 74px;
-    left: 290px;
+    top: 56.51px;
+    left: 318px;
     width: 55px;
     height: 55px;
     overflow: hidden;
     object-fit: contain;
     cursor: pointer;
 }
-.tecnology {
+.vector-parent {
+    position: absolute;
+    top: 18.49px;
+    left: -28px;
+    width: 434px;
+    height: 744.6px;
+}
+.home {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -514,19 +601,12 @@
     height: 800px;
     overflow: hidden;
 }
-.group-wrapper {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 360px;
-    height: 800px;
-}
-.group-parent {
+.home-parent {
     width: 100%;
     position: relative;
     height: 800px;
     text-align: left;
-    font-size: 10px;
+    font-size: 12px;
     color: #000;
     font-family: Roboto;
 }

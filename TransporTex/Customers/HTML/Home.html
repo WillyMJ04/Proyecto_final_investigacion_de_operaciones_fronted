@@ -16,21 +16,21 @@
 
         <div class="profile" id="profileContainer">
             <div class="perfil">Perfil</div>
-            <img class="profileHome" src="../../imgs/Customers/Profile.png" alt="Perfil">
+            <img id="buttonProfile" class="profileHome" src="../../imgs/Customers/Profile.png" alt="Perfil">
         </div>
 
         <div class="inicio-parent">
             <div class="inicio">Inicio</div>
-            <img class="homeHome" src="../../imgs/Customers/home2.png" alt="Inicio">
+            <img id="buttonHome" class="homeHome" src="../../imgs/Customers/home2.png" alt="Inicio">
         </div>
 
-        <img class="home-inner" src="../../imgs/Customers/send_buttom.png" alt="Enviar">
+        <img id="buttonSend" class="home-inner" src="../../imgs/Customers/send_buttom.png" alt="Enviar">
 
         <div class="group-parent">
             <div class="chat-wrapper">
                 <div class="chat">Chat</div>
             </div>
-            <img class="chat-icon" src="../../imgs/Customers/Chat.png" alt="Chat">
+            <img id="buttonChat" class="chat-icon" src="../../imgs/Customers/Chat.png" alt="Chat">
         </div>
 
         <div class="rectangle-parent">
@@ -47,7 +47,7 @@
             </div>
             <div class="paquete">Paquete</div>
             <div class="rde4354324343">#RDE4354324343</div>
-            <div class="rectangle-container">
+            <div class="rectangle-container" onclick="redirectToPage()">
                 <div class="rectangle-div"></div>
                 <img class="chevron-right-icon" src="../../imgs/Customers/chevron-right-simple-white.png" alt="Siguiente">
             </div>
@@ -98,14 +98,15 @@
                     <div class="ubicacion">Ubicación</div>
                 </div>
             </div>
-            <img class="basic-location" src="../../imgs/Customers/location.png" alt="Ubicación">
+            <img id="buttonUbication" class="basic-location" src="../../imgs/Customers/location.png" alt="Ubicación">
         </div>
 
         <div class="group-parent3">
             <img class="group-icon" src="../../imgs/Customers/telephoneHome.png" alt="Teléfono">
             <b class="otros">Otros</b>
-            <div class="group-child8">
-                <img class="chevron-right-icon3" src="../../imgs/Customers/chevron-right-simple-white.png" alt="Siguiente">
+            <div class="rectangle-parent-otros">
+                <div class="group-child-otros"></div> <!-- Nuevo círculo naranja para "Otros" -->
+                <img id="chevronOtros" class="chevron-right-icon3" src="../../imgs/Customers/chevron-right-simple-white.png" alt="Siguiente">
             </div>
         </div>
 
