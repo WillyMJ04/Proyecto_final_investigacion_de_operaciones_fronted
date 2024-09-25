@@ -1,60 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<!DOCTYPE html>
+<title>TransporTex</title>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, width=device-width">
 
-    <link rel="stylesheet"  href="../CSS/index.css" />
+    <link rel="stylesheet" href="../CSS/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo:wght@400&display=swap" />
 </head>
+
 <body>
+    <header></header>
+    <div class="transportexdashboard-parent">
+        <div class="transportexdashboard">
+            <div class="mid-section">
+                <div class="card-5">
+                    <! --Ingresar los datos de las diferentes graficas -->
 
-<div class="transportexdashboard-parent">
-    <div class="transportexdashboard">
-        <div class="mid-section">
-            <div class="card-5">
-                <! --Ingresar los datos de las diferentes graficas -->
+                    <div class="total-de-pedidos">Total de Pedidos </div>
 
-                <div class="total-de-pedidos">Total de Pedidos </div>
-             
 
-                <b class="b" style="position: absolute;">5852</b>
-                <img class="more-icon" alt="" src="../../imgs/AdminView/more.svg">
+                    <b class="b" style="position: absolute;">5852</b>
+                    <img class="more-icon" alt="" src="../../imgs/AdminView/more.svg">
 
-            </div>
-            <div class="card-6">
-                <div class="total-de-pedidos">Total de trabajadores</div>
-
-                <b class="b">3145</b>
-                <img class="more-icon" alt="" src="../../imgs/AdminView/more.svg">
-
-            </div>
-            <div class="card-7">
-                <div class="total-de-pedidos">Cancelaciones</div>
-            
-
-                <b class="b">1035</b>
-                <img class="more-icon" alt="" src="../../imgs/AdminView/more.svg">
-
-            </div>
-            <b class="motocicletas">Motocicletas</b>
-            <div class="search-area">
-                <div class="search-area-child">
                 </div>
-                <div class="search-area-item"><button>Search</button>
+                <div class="card-6">
+                    <div class="total-de-pedidos">Total de trabajadores</div>
+
+                    <b class="b">3145</b>
+                    <img class="more-icon" alt="" src="../../imgs/AdminView/more.svg">
+
                 </div>
-                
-                <div class="search"></div><input type="text" id="searchBar" placeholder="Search"></div>
-                
+                <div class="card-7">
+                    <div class="total-de-pedidos">Cancelaciones</div>
+
+
+                    <b class="b">1035</b>
+                    <img class="more-icon" alt="" src="../../imgs/AdminView/more.svg">
+
+                </div>
+
+                <b class="motocicletas">Motocicletas</b>
+                <div class="search-area">
+                    <div class="search-area-child">
+                    </div>
+                    <div class="search-area-item"><button>Search</button>
+                    </div>
+
+                    <div class="search"></div><input type="text" id="searchBar" placeholder="Search"></div>
+
             </div>
             <div class="card-2">
                 <div class="card-2-child">
                 </div>
                 <div class="detalles">Detalles </div>
-                <div class="month">Month</div><!-- Ingreso de datos  para la sumatoria logica de informacion jajaja-->
+                <div class="month">Month</div>
+                <!-- Ingreso de datos  para la sumatoria logica de informacion jajaja-->
                 <div class="total-de-pedidos1">Total de Pedidos</div>
                 <div class="total-de-trabajadores">Total de Trabajadores</div>
                 <div class="cancelaciones1">Cancelaciones</div>
@@ -88,7 +91,7 @@
                         </tr>
                     </thead>
                     <tbody class="dataTable">
-                        
+
                         <!-- Agrega más filas con datos aquí -->
                     </tbody>
                 </table>
@@ -139,55 +142,52 @@
             </div>
         </div>
     </div>
-</div>
-<script>
-// fetch("https://pokeapi.co/api/v2/pokemon/ditto").then((data)=>console.log(data));
-const DATA=[
-{
-    nombre:"Willy",
-    apellido:"Rex",
-    dpi:"1234",
-    fecha:"Ayer",
-    licencia:"A"
-},
-{
-    nombre:"Oscar",
-    apellido:"Pez",
-    dpi:"21412412",
-    fecha:"Hoy",
-    licencia:"B"
-}
-]
-const table= document.getElementsByClassName("dataTable")[0];
+    </div>
+    <script>
+        // fetch("https://pokeapi.co/api/v2/pokemon/ditto").then((data)=>console.log(data));
+        const DATA = [{
+            nombre: "Willy",
+            apellido: "Rex",
+            dpi: "1234",
+            fecha: "Ayer",
+            licencia: "A"
+        }, {
+            nombre: "Oscar",
+            apellido: "Pez",
+            dpi: "21412412",
+            fecha: "Hoy",
+            licencia: "B"
+        }]
+        const table = document.getElementsByClassName("dataTable")[0];
 
-const createRows=(nombreV,apellidoV,dpiV,fechaV,licenciaV)=>{
-    const papi=document.createElement("tr");
+        const createRows = (nombreV, apellidoV, dpiV, fechaV, licenciaV) => {
+            const papi = document.createElement("tr");
 
-    const name=document.createElement("td");
-    name.textContent=nombreV;
-    const apellido=document.createElement("td");
-    apellido.textContent=apellidoV;
-    const dpi=document.createElement("td");
-    dpi.textContent=dpiV;
-    const fecha=document.createElement("td");
-    fecha.textContent=fechaV;
-    const licencia=document.createElement("td");
-    licencia.textContent= licenciaV;
-    papi.appendChild(name);
-    papi.appendChild(apellido);
-    papi.appendChild(dpi);
-    papi.appendChild(fecha);
-    papi.appendChild(licencia);
-    return papi;
-}
+            const name = document.createElement("td");
+            name.textContent = nombreV;
+            const apellido = document.createElement("td");
+            apellido.textContent = apellidoV;
+            const dpi = document.createElement("td");
+            dpi.textContent = dpiV;
+            const fecha = document.createElement("td");
+            fecha.textContent = fechaV;
+            const licencia = document.createElement("td");
+            licencia.textContent = licenciaV;
+            papi.appendChild(name);
+            papi.appendChild(apellido);
+            papi.appendChild(dpi);
+            papi.appendChild(fecha);
+            papi.appendChild(licencia);
+            return papi;
+        }
 
-DATA.forEach(
-    (item)=>{
-        const element = createRows(item.nombre,item.apellido,item.dpi,item.fecha,item.licencia);
-        table.appendChild(element);
-    }
-)
-
-</script>
+        DATA.forEach(
+            (item) => {
+                const element = createRows(item.nombre, item.apellido, item.dpi, item.fecha, item.licencia);
+                table.appendChild(element);
+            }
+        )
+    </script>
 </body>
+
 </html>
