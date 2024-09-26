@@ -1,37 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/TransporTex/AdminView/CSS/newindex.css" />
+    <link rel="script" href="/TransporTex/AdminView/JAVASCRIPT/Motorcycle.js" />
     <title>TransporTex</title>
-</head>
+  </head>
 
-<body>
-    <div class="leftbar">
+  <body>
+    <div class="transportex">
+      <div class="leftbar">
         <nav className="navbar">
-            <div className="sidebar">
-                <img src="/TransporTex/imgs/AdminView/Logo.png" alt="logo">
-                <h1>Transportex</h1>
-                <h2>Trabajos</h2>
-                <a href="#motocicleta">Motocicleta</a>
-                <a href="#carro">Carro</a>
-                <a href="#camion-mediano">Camión Mediano</a>
-                <a href="#camion-pequenio">Camión Pequeño</a>
-            </div>
+          <div style="background-color: #743d73" class="sidebar">
+            <img src="/TransporTex/imgs/AdminView/Logo.png" alt="logo" />
+            <h1>Transportex</h1>
+            <h2>Trabajos</h2>
+            <a href="#motocicleta">Motocicleta</a>
+            <a href="#carro">Carro</a>
+            <a href="#camion-mediano">Camión Mediano</a>
+            <a href="#camion-pequenio">Camión Pequeño</a>
+          </div>
         </nav>
-
-    </div>
-    <div class="container" style="margin-left: 160px">
+      </div>
+      <div class="container" style="margin-left: 160px">
         <header>
-            <div class="header">
-                <h1>TransporTex</h1>
-            </div>
-
+          <div class="header">
+            <h1>TransporTex</h1>
+          </div>
         </header>
-
+      </div>
+      <div id="panel1" class="panel">
+        <b>Total Pedidos</b>
+        <p>NumerodePedidos</p>
+      </div>
+      <div id="panel2" class="panel">
+        <b>Total Trabajadores</b>
+        <p>NumerodePedidos</p>
+      </div>
+      <div id="panel3" class="panel">
+        <b>Total Cancelaciones</b>
+        <p>NumerodePedidos</p>
+      </div>
+      <div class="dashboard">
+        <h1 class="detalles-empleados">Detalles empleados</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>DPI</th>
+              <th>Fecha de Nacimiento</th>
+              <th>Número de Licencia</th>
+            </tr>
+          </thead>
+          <tbody class="dataTable">
+          </tbody>
+        </table>
+      </div>
     </div>
-</body>
-
+    <script src="/TransporTex/AdminView/JAVASCRIPT/Motorcycle.js"></script>
+  </body>
 </html>

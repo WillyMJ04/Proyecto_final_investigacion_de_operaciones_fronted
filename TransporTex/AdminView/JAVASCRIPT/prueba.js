@@ -1,11 +1,21 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const searchButton = document.getElementById('searchButton');
-    const searchBar = document.getElementById('searchBar');
-    const result = document.getElementById('result');
+function editData(element) {
+    let listItem = element.parentElement;
+    let currentText = listItem.firstChild.textContent.trim();
+    let inputField = document.createElement("input");
+    inputField.type = "text";
+    inputField.value = currentText;
 
-    searchButton.addEventListener('click', () => {
-        const query = searchBar.value;
-        result.textContent = `You searched for: ${query}`;
-        searchBar.value = '';
-    });
-});
+    let saveButton = document.createElement("button");
+    saveButton.textContent = "Guardar";
+    saveButton.onclick = function() {
+        saveData(listItem, inputField.value);
+    };
+
+    listItem.innerHTML = "";
+    listItem.appendChild(inputField);
+    listItem.appendChild(saveButton);
+}
+
+function saveData(listItem, newText) {
+    listItem.innerHTML = newText + ' <span class="edit-btn" onclick="editData(this)">Editar</span>';
+}

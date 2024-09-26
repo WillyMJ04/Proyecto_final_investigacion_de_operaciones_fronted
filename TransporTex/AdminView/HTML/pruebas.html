@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Bar Example</title>
+    <title>Editar Datos</title>
+    <style>
+        .edit-btn {
+            margin-left: 10px;
+            cursor: pointer;
+            color: blue;
+        }
+    </style>
 </head>
 <body>
-    <h1>Search Bar Example</h1>
-    <input type="text" id="searchBar" placeholder="Type your search here...">
-    <button id="searchButton">Search</button>
-    <p id="result"></p>
+    <h2>Lista de Datos</h2>
+    <ul id="data-list">
+        <li>Dato 1 <span class="edit-btn" onclick="editData(this)">Editar</span></li>
+        <li>Dato 2 <span class="edit-btn" onclick="editData(this)">Editar</span></li>
+        <li>Dato 3 <span class="edit-btn" onclick="editData(this)">Editar</span></li>
+    </ul>
 
     <script src="script.js"></script>
 </body>
