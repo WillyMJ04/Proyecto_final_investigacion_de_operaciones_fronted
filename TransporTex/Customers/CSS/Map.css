@@ -132,27 +132,11 @@
     width: 34px;
     height: 47.4px;
 }
-.group-child {
-    position: absolute;
-    top: 65px;
-    left: 552px;
-    border-radius: 39.44px;
-    background-color: #fe6f23;
-    width: 258px;
-    height: 70.6px;
-}
-.group-item {
-    position: absolute;
-    top: 73.04px;
-    left: 558.32px;
-    border-radius: 38.41px;
-    background-color: #f2f2f2;
-    width: 244.5px;
-    height: 54.4px;
-}
+
+
 .lugar-de-entrega {
     position: absolute;
-    top: 90px;
+    top: 10px;
     left: 579px;
     display: inline-block;
     width: 158px;
@@ -207,7 +191,7 @@
 }
 .group-inner {
     position: absolute;
-    top: 0px;
+    top: -40px;
     left: 0px;
     border-radius: 39.44px;
     background-color: #fe6f23;
@@ -216,7 +200,7 @@
 }
 .rectangle-div {
     position: absolute;
-    top: 0px;
+    top: -40px;
     left: 0px;
     border-radius: 38.41px;
     background-color: #f2f2f2;
@@ -225,16 +209,18 @@
 }
 .lugar-de-entrega1 {
     position: absolute;
-    top: 16.96px;
+    top: -25px;
     left: 20.68px;
     display: inline-block;
     width: 158px;
     height: 22px;
+    border: none;
+    background-color: #f2f2f2;
 }
 .iconsaxlinearsearchnormal11 {
     position: absolute;
-    top: 14.85px;
-    left: 178.87px;
+    top: -25px;
+    left: 200.87px;
     width: 22.4px;
     height: 23.8px;
     overflow: hidden;
@@ -323,9 +309,9 @@
     cursor: pointer;
     color: #000;
 }
-.comida {
+.mapaEntrega {
     position: absolute;
-    top: 238px;
+    top: 115px;
     left: 36px;
     font-size: 21.28px;
     display: inline-block;
@@ -335,7 +321,7 @@
 }
 .iconsaxboldi3dcubescan {
     position: absolute;
-    top: 74px;
+    top: 32px;
     left: 286px;
     width: 55px;
     height: 55px;
@@ -343,13 +329,13 @@
     object-fit: contain;
 }
 .group-child1 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    position: relative;
+    top: -110px;
+    left: -20px;
     border-radius: 15.52px;
     background-color: #f2f2f2;
-    width: 309px;
-    height: 233px;
+    width: 360px;
+    height: 350px;
 }
 .rectangle-wrapper {
     position: absolute;
@@ -413,7 +399,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    top: 0%;
+    top: 90%;
     right: 0%;
     bottom: 0%;
     left: 0%;
@@ -429,7 +415,7 @@
 }
 .agregar {
     position: absolute;
-    top: 7px;
+    top: 45px;
     left: 21px;
     font-weight: 600;
     display: inline-block;
