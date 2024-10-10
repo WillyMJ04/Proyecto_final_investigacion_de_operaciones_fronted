@@ -1,0 +1,551 @@
+.construccion-child {
+    position: absolute;
+    top: 705px;
+    left: -28px;
+    max-height: 100%;
+    width: 434px;
+    object-fit: contain;
+}
+.construccion-item {
+    position: absolute;
+    top: 701px;
+    left: -12px;
+    box-sizing: border-box;
+    width: 83px;
+    height: 6px;
+}
+.perfil {
+    position: absolute;
+    top: 30.56px;
+    left: 0px;
+    font-weight: 500;
+    display: inline-block;
+    width: 32.3px;
+    height: 13.8px;
+}
+.user-icon {
+    position: absolute;
+    height: 54.73%;
+    width: 82.66%;
+    top: -83.72%;
+    right: 7.27%;
+    bottom: 128.99%;
+    left: 10.07%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    display: none;
+}
+.iconlylight-outlineprofile {
+    position: absolute;
+    height: 49.77%;
+    width: 59.75%;
+    top: 0%;
+    right: 12.95%;
+    bottom: 50.23%;
+    left: 27.29%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.profile {
+    position: absolute;
+    top: 718.73px;
+    left: 303.62px;
+    width: 32.3px;
+    height: 44.4px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #4a4b56;
+}
+.inicio {
+    position: absolute;
+    top: 30.62px;
+    left: 0px;
+    font-weight: 500;
+    display: inline-block;
+    width: 33.4px;
+    height: 13.8px;
+}
+.iconsaxlinearhome2 {
+    position: absolute;
+    top: 0px;
+    left: 5.56px;
+    width: 26.7px;
+    height: 23.7px;
+    overflow: hidden;
+}
+.inicio-parent {
+    position: absolute;
+    top: 717.7px;
+    left: 8.07px;
+    width: 33.4px;
+    height: 44.4px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #4a4b56;
+}
+.div {
+    position: relative;
+    font-weight: 500;
+}
+.wrapper {
+    position: absolute;
+    height: 2.25%;
+    width: 8.33%;
+    top: 2.31%;
+    right: 84.04%;
+    bottom: 95.44%;
+    left: 7.63%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #171321;
+}
+.frame-icon {
+    position: absolute;
+    height: 1.54%;
+    width: 19.22%;
+    top: 2.73%;
+    right: 8.21%;
+    bottom: 95.74%;
+    left: 72.56%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.construccion-inner {
+    position: absolute;
+    top: 693px;
+    left: 143.37px;
+    width: 79px;
+    height: 70.1px;
+    cursor: pointer;
+}
+.chat {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-weight: 500;
+    display: inline-block;
+    width: 34px;
+    height: 11.7px;
+}
+.chat-wrapper {
+    position: absolute;
+    top: 35.62px;
+    left: 0px;
+    width: 34px;
+    height: 11.7px;
+}
+.chat-icon {
+    position: absolute;
+    height: 49.37%;
+    width: 75.59%;
+    top: 0%;
+    right: 20.54%;
+    bottom: 50.63%;
+    left: 3.87%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.group-parent {
+    position: absolute;
+    top: 715.65px;
+    left: 246.87px;
+    width: 34px;
+    height: 47.4px;
+    font-size: 12px;
+    color: #4a4b56;
+}
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 39.44px;
+    background-color: #fe6f23;
+    width: 258px;
+    height: 70.6px;
+}
+.group-item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 38.41px;
+    background-color: #f2f2f2;
+    width: 244.5px;
+    height: 54.4px;
+}
+.construccion1 {
+    position: absolute;
+    top: 16.96px;
+    left: 20.68px;
+    display: inline-block;
+    width: 142px;
+    height: 22px;
+}
+.iconsaxlinearsearchnormal1 {
+    position: absolute;
+    top: 14.85px;
+    left: 178.87px;
+    width: 22.4px;
+    height: 23.8px;
+    overflow: hidden;
+}
+.rectangle-group {
+    position: absolute;
+    top: 8.04px;
+    left: 6.32px;
+    width: 244.5px;
+    height: 54.4px;
+}
+.rectangle-parent {
+    position: absolute;
+    top: 65px;
+    left: 20px;
+    width: 258px;
+    height: 70.6px;
+    font-size: 19.62px;
+    color: #a4a4a4;
+}
+.hammer-icon {
+    position: absolute;
+    top: 1058px;
+    left: 510px;
+    border-radius: 200px;
+    width: 291px;
+    height: 335px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.text {
+    position: absolute;
+    top: 0px;
+    left: 6.68px;
+    display: inline-block;
+    height: 13.8px;
+    text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+}
+.iconsaxlinearmap {
+    position: absolute;
+    top: -30.62px;
+    left: 20.03px;
+    width: 26.7px;
+    height: 23.7px;
+    overflow: hidden;
+    display: none;
+}
+.ubicacion {
+    position: absolute;
+    top: 1.98px;
+    left: 0px;
+    font-weight: 500;
+    color: #4a4b56;
+    display: inline-block;
+    width: 63.4px;
+    height: 15.8px;
+}
+.text-parent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 63.4px;
+    height: 17.8px;
+}
+.group-wrapper {
+    position: absolute;
+    top: 31.25px;
+    left: 0px;
+    width: 63.4px;
+    height: 17.8px;
+}
+.basic-location {
+    position: absolute;
+    top: 0px;
+    left: 9.55px;
+    width: 36px;
+    height: 31px;
+    overflow: hidden;
+}
+.group-container {
+    position: absolute;
+    top: 713px;
+    left: 73.45px;
+    width: 63.4px;
+    height: 49px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.group-inner {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 15.52px;
+    background-color: #f2f2f2;
+    width: 60px;
+    height: 60px;
+}
+.computer-icon-1-1 {
+    position: absolute;
+    top: 29px;
+    left: 9px;
+    width: 30px;
+    height: 28px;
+    object-fit: cover;
+}
+.rectangle-container {
+    position: absolute;
+    top: 0px;
+    left: 1px;
+    width: 60px;
+    height: 60px;
+}
+.herramientas {
+    position: absolute;
+    top: 12px;
+    left: 0px;
+}
+.group-parent1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 61px;
+    height: 60px;
+}
+.group-div {
+    position: absolute;
+    top: 170px;
+    left: 38px;
+    width: 61px;
+    height: 60px;
+    text-align: center;
+}
+.rectangle-wrapper {
+    position: absolute;
+    top: 0px;
+    left: 2px;
+    width: 60px;
+    height: 60px;
+}
+.materiales {
+    position: absolute;
+    top: 14px;
+    left: 0px;
+    display: inline-block;
+    width: 64px;
+    height: 11px;
+}
+.group-frame {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 64px;
+    height: 60px;
+}
+.construccion-inner1 {
+    position: absolute;
+    top: 170px;
+    left: 113px;
+    width: 64px;
+    height: 60px;
+    text-align: center;
+}
+.rectangle-frame {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+}
+.pinturas {
+    position: absolute;
+    top: 12px;
+    left: 4.42px;
+    display: inline-block;
+    width: 52px;
+    height: 10.8px;
+}
+.construccion-inner2 {
+    position: absolute;
+    top: 170px;
+    left: 183px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+.construccion-inner3 {
+    position: absolute;
+    top: 170px;
+    left: 251px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+.group-child3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 15.52px;
+    background-color: #f2f2f2;
+    width: 81px;
+    height: 79.6px;
+}
+.rectangle-wrapper2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 81px;
+    height: 79.6px;
+}
+.xxxx {
+    position: absolute;
+    top: 90px;
+    left: 23px;
+    display: inline-block;
+    width: 35px;
+    height: 12px;
+}
+.edit-plus-circle {
+    position: absolute;
+    top: 52.08px;
+    left: 50.86px;
+    width: 22.6px;
+    height: 22.3px;
+    overflow: hidden;
+}
+.group-parent5 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 81px;
+    height: 102px;
+}
+.construccion-inner4 {
+    position: absolute;
+    top: 279px;
+    left: 38px;
+    width: 81px;
+    height: 102px;
+}
+.construccion-inner5 {
+    position: absolute;
+    top: 279px;
+    left: 139px;
+    width: 81px;
+    height: 102px;
+}
+.construccion-inner6 {
+    position: absolute;
+    top: 279px;
+    left: 232px;
+    width: 81px;
+    height: 102px;
+}
+.construccion-inner7 {
+    position: absolute;
+    top: 415px;
+    left: 38px;
+    width: 81px;
+    height: 102px;
+}
+.construccion-inner8 {
+    position: absolute;
+    top: 415px;
+    left: 139px;
+    width: 81px;
+    height: 102px;
+}
+.construccion-inner9 {
+    position: absolute;
+    top: 415px;
+    left: 232px;
+    width: 81px;
+    height: 102px;
+}
+.construccion-inner10 {
+    position: absolute;
+    top: 557px;
+    left: 38px;
+    width: 81px;
+    height: 102px;
+}
+.construccion-inner11 {
+    position: absolute;
+    top: 557px;
+    left: 139px;
+    width: 81px;
+    height: 102px;
+}
+.construccion-inner12 {
+    position: absolute;
+    top: 557px;
+    left: 232px;
+    width: 81px;
+    height: 102px;
+}
+.construccion2 {
+    position: absolute;
+    top: 239px;
+    left: 38px;
+    font-size: 21.28px;
+    display: inline-block;
+    width: 144px;
+    height: 25px;
+}
+.key-icon-1 {
+    position: absolute;
+    top: 196px;
+    left: 130px;
+    border-radius: 3px;
+    width: 30px;
+    height: 28px;
+    object-fit: cover;
+}
+.image-icon-1 {
+    position: absolute;
+    top: 193px;
+    left: 263px;
+    width: 32px;
+    height: 34px;
+    object-fit: cover;
+}
+.location-icon-1 {
+    position: absolute;
+    top: 194px;
+    left: 199px;
+    width: 30px;
+    height: 32px;
+    object-fit: cover;
+}
+.iconsaxboldi3dcubescan {
+    position: absolute;
+    top: 72px;
+    left: 292px;
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+    object-fit: contain;
+    cursor: pointer;
+}
+.construccion {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+    width: 360px;
+    height: 800px;
+    overflow: hidden;
+}
+.construccion-parent {
+    width: 100%;
+    position: relative;
+    height: 800px;
+    text-align: left;
+    font-size: 10px;
+    color: #000;
+    font-family: Roboto;
+}
+

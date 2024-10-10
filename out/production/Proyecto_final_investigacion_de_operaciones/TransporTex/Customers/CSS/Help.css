@@ -1,0 +1,406 @@
+.div {
+    position: relative;
+    font-weight: 500;
+}
+.wrapper {
+    position: absolute;
+    height: 2.25%;
+    width: 8.33%;
+    top: 2.19%;
+    right: 83.78%;
+    bottom: 95.56%;
+    left: 7.88%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #171321;
+}
+.frame-icon {
+    position: absolute;
+    height: 1.54%;
+    width: 19.22%;
+    top: 2.61%;
+    right: 7.96%;
+    bottom: 95.86%;
+    left: 72.82%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.completar-pago {
+    position: absolute;
+    height: 3.88%;
+    width: 65.56%;
+    top: 9.13%;
+    left: 22.5%;
+    font-size: 24px;
+    font-weight: 900;
+    display: inline-block;
+}
+.group-child {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 50px;
+    background-color: #fe6f23;
+}
+.chevron-right-icon {
+    position: absolute;
+    height: 50%;
+    width: 60%;
+    top: 24.07%;
+    right: 22.22%;
+    bottom: 25.93%;
+    left: 17.78%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: contain;
+}
+.rectangle-parent {
+    position: absolute;
+    height: 5.38%;
+    width: 12.5%;
+    top: 8.38%;
+    right: 82.78%;
+    bottom: 86.25%;
+    left: 4.72%;
+    cursor: pointer;
+}
+.instance-child {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 20px;
+    background-color: #fe6f23;
+}
+.rectangle-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+}
+.finalizar-orden {
+    position: absolute;
+    height: 50.88%;
+    width: 85.14%;
+    top: 26.32%;
+    left: 5.41%;
+    font-weight: 600;
+    display: inline-block;
+}
+.instance-parent {
+    position: absolute;
+    height: 7.13%;
+    width: 61.67%;
+    top: 77.13%;
+    right: 21.11%;
+    bottom: 15.75%;
+    left: 17.22%;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    font-family: Poppins;
+}
+.detalles-de-pago {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    font-weight: 800;
+    display: inline-block;
+}
+.detalles-de-pago-wrapper {
+    position: absolute;
+    height: 2.13%;
+    width: 52.22%;
+    top: 17.88%;
+    right: 40%;
+    bottom: 80%;
+    left: 7.78%;
+}
+.tarjeta-1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    font-weight: 500;
+    display: inline-block;
+}
+.tarjeta-1-wrapper {
+    position: absolute;
+    height: 2%;
+    width: 21.11%;
+    top: 22.25%;
+    right: 66.94%;
+    bottom: 75.75%;
+    left: 11.94%;
+}
+.tarjeta-2-wrapper {
+    position: absolute;
+    height: 1.88%;
+    width: 32.5%;
+    top: 27.25%;
+    right: 55.56%;
+    bottom: 70.88%;
+    left: 11.94%;
+}
+.div1 {
+    position: absolute;
+    height: 100%;
+    width: 200px;
+    top: 20px;
+    left: 0%;
+    display: inline-block;
+}
+.container {
+    position: absolute;
+    height: 1.5%;
+    width: 46.94%;
+    top: 24.88%;
+    right: 41.11%;
+    bottom: 73.63%;
+    left: 11.94%;
+}
+.basic-credit-card {
+    position: absolute;
+    height: 29.09%;
+    width: 88.89%;
+    top: 0%;
+    right: 0%;
+    bottom: 70.91%;
+    left: 11.11%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.basic-credit-card1 {
+    position: absolute;
+    height: 29.09%;
+    width: 88.89%;
+    top: 70.91%;
+    right: 11.11%;
+    bottom: 0%;
+    left: 0%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.ayuda-inner {
+    position: absolute;
+    height: 6.88%;
+    width: 5%;
+    top: 22.25%;
+    right: 89.72%;
+    bottom: 70.88%;
+    left: 5.28%;
+}
+.div2 {
+    position: absolute;s
+    height: 100%;
+    width: 200px;
+    top: 25px;
+    left: 0%;
+    display: inline-block;
+}
+.ayuda-child {
+    position: absolute;
+    height: 0.25%;
+    width: 120.56%;
+    top: 21.13%;
+    right: -18.33%;
+    bottom: 78.63%;
+    left: -2.22%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: contain;
+    opacity: 0.7;
+}
+.ayuda-item {
+    position: absolute;
+    height: 0.25%;
+    width: 120.56%;
+    top: 27.13%;
+    right: -12.5%;
+    bottom: 72.63%;
+    left: -8.06%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: contain;
+    opacity: 0.7;
+}
+.basic-checkbox-checked {
+    position: absolute;
+    height: 3%;
+    width: 6.67%;
+    top: 22.25%;
+    right: 14.44%;
+    bottom: 74.75%;
+    left: 78.89%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.icon-toggle-checkbox-outli {
+    position: absolute;
+    height: 3%;
+    width: 6.67%;
+    top: 28.75%;
+    right: 14.17%;
+    bottom: 68.25%;
+    left: 79.17%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.ayuda {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 800px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 13px;
+    color: #000;
+    font-family: Roboto;
+}
+
+
+.orden-completada {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-weight: 800;
+    display: inline-block;
+    width: 188px;
+    height: 17px;
+}
+.orden-completada-wrapper {
+    position: absolute;
+    top: 19px;
+    left: 20px;
+    width: 188px;
+    height: 17px;
+}
+.instance-item {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 20px;
+    background-color: #fe6f23;
+}
+.rectangle-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 104px;
+    height: 20px;
+}
+.aceptar {
+    position: absolute;
+    top: 2px;
+    left: 12px;
+    font-weight: 600;
+    display: inline-block;
+    width: 79px;
+    height: 13px;
+}
+.instance-group {
+    position: absolute;
+    top: 84px;
+    left: 111px;
+    width: 104px;
+    height: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    font-family: Poppins;
+}
+.rde43543243431 {
+    font-size: 15px;
+}
+.rde4354324343 {
+    position: absolute;
+    top: 49px;
+    left: 92px;
+    display: inline-block;
+    width: 143px;
+    height: 22px;
+    font-size: 10.9px;
+}
+.updatename {
+    width: 330px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    height: 120px;
+    overflow: hidden;
+    max-width: 90%;
+    max-height: 90%;
+    text-align: left;
+    font-size: 13px;
+    color: #000;
+    font-family: Roboto;
+}
+.custom-checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #f0f0f0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    cursor: pointer;
+    vertical-align: middle;
+    position: relative;
+    margin-left: 5px;
+    left: 250px;
+}
+
+.custom-checkbox:checked {
+    background-color: #007BFF;
+    border-color: #007BFF;
+}
+
+.custom-checkbox:checked:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 3px;
+    width: 6px;
+    height: 11px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.label-checkbox {
+    cursor: pointer;
+    position: absolute; /* Ajuste según sea necesario para alinear con los checkboxes */
+    width: 20px; /* Asegura que el área clickeable sea adecuada */
+    height: 20px; /* Asegura que el área clickeable sea adecuada */
+}
+
