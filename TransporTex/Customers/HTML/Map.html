@@ -1,169 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, width=device-width">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Google</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap">
     <link rel="stylesheet" href="../CSS/Map.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmT_JUnoisy96sw975ZLhui0fBTOMDwGU&libraries=places,geocoder"></script>
 
+    <!-- API de Google Maps con async, defer y callback para la función initMap -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmT_JUnoisy96sw975ZLhui0fBTOMDwGU&libraries=places&callback=initMap"
+            async defer></script>
 </head>
 <body>
 
 <div class="group-parent">
     <div class="group-wrapper">
         <div class="food">
-            <!-- Otros elementos que ya tienes en tu código -->
-            <div class="rectangle-container">
-                <div class="group-inner"></div>
-                <div class="rectangle-parent1">
-                    <div class="rectangle-div">
-                        <input id="pac-input" class="rectangle-div-search" type="text" placeholder="Busqueda" />
-                        <button class="search-btn"></button>
+            <div class="food-inner"></div>
+            <div class="rectangle-parent">
+                <div class="group-child"></div>
+                <div class="vector-parent">
+                    <img class="group-item" src="../../imgs/Customers/Rectangle.png" />
+                    <input id="place-input" class="lugar-de-entrega" type="text" placeholder="Lugar de entrega"/>
+                    <div class="iconsaxlinearsearchnormal1"></div>
+                    <div class="food1">
+                        <div class="food-item"></div>
                     </div>
-                    <img class="iconsaxlinearsearchnormal11" src="../../imgs/Customers/Lupa.png"/>
+
+                    <b class="comida">Mapa de entrega</b>
+
+                    <div class="food-inner1">
+                        <div class="rectangle-wrapper">
+                            <!-- Contenedor del mapa -->
+                            <div class="group-child1"></div>
+                        </div>
+                    </div>
+
+                    <b class="comida1">
+                        <!-- Menú desplegable para seleccionar productos -->
+                        <select id="product-select" class="selecciona-tu-producto1">
+                            <option value="" disabled selected>Selecciona tu producto</option>
+                            <option value="producto1">Producto 1</option>
+                            <option value="producto2">Producto 2</option>
+                            <option value="producto3">Producto 3</option>
+                        </select>
+
+                    </b>
+                    <div class="producto">Producto</div>
                 </div>
+                <div class="cantidad">cantidad</div>
             </div>
 
-            <b class="mapaEntrega">Mapa</b>
-            <div class="food-inner1">
+            <b class="comida2">Mapa de entrega</b>
+            <div class="food-inner2">
                 <div class="rectangle-wrapper">
-                    <!-- Mapa dentro del cuadro gris -->
-                    <div id="map" class="group-child1"></div>
+                    <div class="rectangle-wrapper">
+                        <div id="map" class="group-child1"></div>
+                    </div>
                 </div>
             </div>
-
-            <!-- Campos para la ubicación del cliente y del proveedor -->
-            <div class="instance-parent" id="groupContainer5">
-                <div>
-                    <label class="ubiCliente" for="cliente-ubicacion">Calculo kms</label>
-                    <input type="text" id="cliente-ubicacion" class="ubicacion-input" placeholder="Donde lo deseas" readonly>
-                    <button id="btnSelectCliente">Buscar</button>
-                </div>
-                <div>
-                    <label for="proveedor-ubicacion">Dirección del proveedor:</label>
-                    <input type="text" id="proveedor-ubicacion" class="ubicacion-input1" placeholder="Ubicacion del proveedor" readonly>
-                    <button id="btnSelectProveedor">Buscar</button>
-                </div>
+            <div class="instance-parent" id="groupContainer2">
                 <div class="rectangle-wrapper1">
-                    <div class="instance-child"></div>
+                    <div class="instance-item"></div>
                 </div>
-                <div class="agregar">Guardar</div>
+                <div class="calcular">
+                    <button id="calcular-btn" class="selecciona-tu-producto">Calcular</button>
+                </div>
             </div>
+            <b class="comida3">A donde quieres que lo llevemos?</b>
+            <!-- Reemplazamos la imagen por un input para la cantidad -->
+            <input type="number" id="cantidad-input" class="cantidad-input" placeholder="Cantidad" min="1">
         </div>
     </div>
 </div>
 
 <script>
-    var geocoder;
+    let map, autocomplete, marker, selectedPlace;
 
     function initMap() {
-        // Inicializar el mapa
-        var map = new google.maps.Map(document.getElementById('map'), {
-            center: { lat: -34.397, lng: 150.644 }, // Cambia esta ubicación según tu necesidad
+        console.log("Inicializando el mapa...");
+
+        // Inicializa el mapa centrado en una ubicación predeterminada
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: -34.397, lng: 150.644 },
             zoom: 8
         });
 
-        // Inicializar el geocoder
-        geocoder = new google.maps.Geocoder();
+        // Vincular el autocompletado al campo de texto
+        var input = document.getElementById('place-input');
+        autocomplete = new google.maps.places.Autocomplete(input);
+        autocomplete.bindTo('bounds', map);
 
-        // Referencia al input de búsqueda
-        var input = document.getElementById('pac-input');
-        var searchBox = new google.maps.places.SearchBox(input);
-
-        // Sesgado del cuadro de búsqueda en el mapa actual
-        map.addListener('bounds_changed', function () {
-            searchBox.setBounds(map.getBounds());
+        // Crear un marcador para el mapa
+        marker = new google.maps.Marker({
+            map: map,
+            draggable: true,
+            visible: false  // Inicialmente oculto
         });
 
-        var markers = [];
-
-        // Evento cuando el usuario selecciona un lugar de las sugerencias
-        searchBox.addListener('places_changed', function () {
-            var places = searchBox.getPlaces();
-
-            if (places.length === 0) {
+        // Evento que se dispara cuando se selecciona un lugar
+        autocomplete.addListener('place_changed', function () {
+            var place = autocomplete.getPlace();
+            if (!place.geometry) {
+                console.log("No se encontró una geometría disponible para el lugar seleccionado.");
                 return;
             }
 
-            // Eliminar los marcadores anteriores
-            markers.forEach(function (marker) {
-                marker.setMap(null);
-            });
-            markers = [];
+            // Centrar el mapa en el lugar seleccionado
+            if (place.geometry.viewport) {
+                map.fitBounds(place.geometry.viewport);
+            } else {
+                map.setCenter(place.geometry.location);
+                map.setZoom(15);
+            }
 
-            // Ajustar los límites del mapa para los nuevos resultados
-            var bounds = new google.maps.LatLngBounds();
-            places.forEach(function (place) {
-                if (!place.geometry) {
-                    console.log("Returned place contains no geometry");
-                    return;
-                }
+            // Colocar el marcador en el lugar seleccionado
+            marker.setPosition(place.geometry.location);
+            marker.setVisible(true);
 
-                // Crear un marcador para cada lugar
-                var marker = new google.maps.Marker({
-                    map: map,
-                    title: place.name,
-                    position: place.geometry.location
-                });
+            // Guardar el lugar seleccionado globalmente
+            selectedPlace = place;
 
-                markers.push(marker);
-
-                // Ajustar el área visible del mapa
-                if (place.geometry.viewport) {
-                    bounds.union(place.geometry.viewport);
-                } else {
-                    bounds.extend(place.geometry.location);
-                }
-            });
-            map.fitBounds(bounds);
+            // Habilitar el botón "Calcular"
+            document.getElementById('calcular-btn').disabled = false;
         });
 
-        // Evento para capturar clics en el mapa y actualizar los inputs
-        map.addListener('click', function (event) {
-            var latLng = event.latLng;
-            var clienteInput = document.getElementById('cliente-ubicacion');
-            var proveedorInput = document.getElementById('proveedor-ubicacion');
-
-            // Llamar al geocoder para convertir las coordenadas en una dirección
-            geocodeLatLng(latLng, function (address) {
-                if (clienteInput.value === "") {
-                    clienteInput.value = address;
-                } else {
-                    proveedorInput.value = address;
-                }
-            });
-
-            // Agregar un marcador en la posición seleccionada
-            var marker = new google.maps.Marker({
-                position: latLng,
-                map: map
-            });
-
-            markers.push(marker);
-        });
+        console.log("Mapa y autocompletado inicializados correctamente");
     }
 
-    // Función para convertir coordenadas a una dirección
-    function geocodeLatLng(latLng, callback) {
-        geocoder.geocode({ location: latLng }, function (results, status) {
-            if (status === "OK") {
-                if (results[0]) {
-                    callback(results[0].formatted_address); // Devolver la dirección formateada
-                } else {
-                    callback("No se encontró dirección.");
-                }
+    window.onload = function() {
+        console.log("Ventana cargada, llamando a initMap...");
+        initMap();
+
+        // Capturar la selección del producto
+        const productSelect = document.getElementById('product-select');
+        const calcularBtn = document.getElementById('calcular-btn');
+
+        // Manejar el clic en el botón Calcular
+        calcularBtn.addEventListener('click', function() {
+            const selectedProduct = productSelect.value;
+            const quantity = document.getElementById('cantidad-input').value;
+
+            if (selectedPlace && selectedPlace.geometry) {
+                const location = selectedPlace.geometry.location;
+                alert(`Producto: ${selectedProduct}\nCantidad: ${quantity}\nUbicación: ${selectedPlace.name}, ${location.lat()}, ${location.lng()}`);
             } else {
-                console.log("Geocodificación fallida debido a: " + status);
-                callback("Error al obtener la dirección.");
+                alert("Por favor, selecciona un lugar válido.");
             }
         });
-    }
 
-    // Ejecutar la función para inicializar el mapa cuando la página cargue
-    window.onload = initMap;
+        // Deshabilitar el botón Calcular hasta que se seleccione un lugar
+        calcularBtn.disabled = true;
+    };
+
 </script>
 
 </body>

@@ -1,9 +1,62 @@
+.instance-child {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    background-color: #f1f1f1;
+}
+.food-inner {
+    position: absolute;
+    top: 100px;
+    left: 38px;
+    width: 206px;
+    height: 27px;
+}
+.group-child {
+    position: absolute;
+    top: 354px;
+    left: 520px;
+    border-radius: 39.44px;
+    background-color: #fe6f23;
+    width: 248px;
+    height: 63px;
+}
+.group-item {
+    position: absolute;
+    top: 358.79px;
+    left: 524.47px;
+    border-radius: 38.41px;
+    width: 237.5px;
+    height: 53.2px;
+}
+.lugar-de-entrega {
+    position: absolute;
+    top: 365px;
+    left: 541px;
+    background-color:#f2f2f2;
+    color: gray;
+    border: none;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+}
+.iconsaxlinearsearchnormal1 {
+    position: absolute;
+    top: 85.91px;
+    left: 716.26px;
+    width: 21.8px;
+    height: 23.2px;
+    overflow: hidden;
+}
 .food-child {
     position: absolute;
     top: 705px;
-    left: -28px;
-    max-height: 100%;
+    left: 406px;
     width: 434px;
+    height: 0px;
     object-fit: contain;
 }
 .food-item {
@@ -17,7 +70,7 @@
 }
 .perfil {
     position: absolute;
-    top: 30.56px;
+    top: 46.73px;
     left: 0px;
     font-weight: 500;
     display: inline-block;
@@ -26,12 +79,12 @@
 }
 .user-icon {
     position: absolute;
-    height: 54.73%;
-    width: 82.66%;
-    top: -83.72%;
-    right: 7.27%;
-    bottom: 128.99%;
-    left: 10.07%;
+    height: 39.27%;
+    width: 80.19%;
+    top: -59.96%;
+    right: 11.94%;
+    bottom: 120.68%;
+    left: 7.87%;
     max-width: 100%;
     overflow: hidden;
     max-height: 100%;
@@ -39,22 +92,22 @@
 }
 .iconlylight-outlineprofile {
     position: absolute;
-    height: 49.77%;
-    width: 59.75%;
+    height: 35.64%;
+    width: 58.2%;
     top: 0%;
-    right: 12.95%;
-    bottom: 50.23%;
-    left: 27.29%;
+    right: 17.19%;
+    bottom: 64.36%;
+    left: 24.61%;
     max-width: 100%;
     overflow: hidden;
     max-height: 100%;
 }
 .profile {
     position: absolute;
-    top: 718.73px;
-    left: 303.62px;
+    top: 702.56px;
+    left: 295.62px;
     width: 32.3px;
-    height: 44.4px;
+    height: 60.6px;
     cursor: pointer;
 }
 .inicio {
@@ -82,17 +135,41 @@
     height: 44.4px;
     cursor: pointer;
 }
-.food-inner {
+.div {
+    position: relative;
+    font-weight: 500;
+}
+.wrapper {
     position: absolute;
-    top: calc(50% - 381.51px);
-    left: calc(50% - 152.54px);
-    width: 30px;
-    height: 18px;
+    height: 2.3%;
+    width: 8.58%;
+    top: 2.29%;
+    right: 83.92%;
+    bottom: 95.41%;
+    left: 7.51%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #171321;
+}
+.frame-icon {
+    position: absolute;
+    height: 1.53%;
+    width: 19.24%;
+    top: 2.73%;
+    right: 8.2%;
+    bottom: 95.74%;
+    left: 72.56%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
 }
 .group-icon {
     position: absolute;
     top: 693px;
-    left: 143.37px;
+    left: 139.37px;
     width: 79px;
     height: 70.1px;
     cursor: pointer;
@@ -108,90 +185,33 @@
 }
 .chat-wrapper {
     position: absolute;
-    top: 35.62px;
+    top: 51.73px;
     left: 0px;
     width: 34px;
     height: 11.7px;
 }
 .chat-icon {
     position: absolute;
-    height: 49.37%;
-    width: 75.59%;
+    height: 36.06%;
+    width: 73.24%;
     top: 0%;
-    right: 20.54%;
-    bottom: 50.63%;
-    left: 3.87%;
+    right: 25.97%;
+    bottom: 63.94%;
+    left: 0.8%;
     max-width: 100%;
     overflow: hidden;
     max-height: 100%;
 }
-.group-container {
+.group-div {
     position: absolute;
-    top: 715.65px;
-    left: 246.87px;
+    top: 699.54px;
+    left: 240.87px;
     width: 34px;
-    height: 47.4px;
-}
-
-
-.lugar-de-entrega {
-    position: absolute;
-    top: 10px;
-    left: 579px;
-    display: inline-block;
-    width: 158px;
-    height: 22px;
-}
-.lupa {
-    position: absolute;
-    top: 87.89px;
-    left: 737.18px;
-    width: 22.4px;
-    height: 23.8px;
-    overflow: hidden;
-}
-.line-icon {
-    position: absolute;
-    top: 705px;
-    left: 406px;
-    width: 434px;
-    height: 0px;
-    object-fit: contain;
-}
-.div {
-    position: relative;
-    font-weight: 500;
-}
-.wrapper {
-    position: absolute;
-    height: 2.25%;
-    width: 8.33%;
-    top: 2.31%;
-    right: 84.04%;
-    bottom: 95.44%;
-    left: 7.63%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    color: #171321;
-}
-.frame-icon {
-    position: absolute;
-    height: 1.54%;
-    width: 19.22%;
-    top: 2.73%;
-    right: 8.21%;
-    bottom: 95.74%;
-    left: 72.56%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
+    height: 63.5px;
 }
 .group-inner {
     position: absolute;
-    top: -40px;
+    top: 0px;
     left: 0px;
     border-radius: 39.44px;
     background-color: #fe6f23;
@@ -200,7 +220,7 @@
 }
 .rectangle-div {
     position: absolute;
-    top: -40px;
+    top: 0px;
     left: 0px;
     border-radius: 38.41px;
     background-color: #f2f2f2;
@@ -209,60 +229,28 @@
 }
 .lugar-de-entrega1 {
     position: absolute;
-    top: -25px;
-    left: 20.68px;
+    top: 16.96px;
+    left: 19.68px;
     display: inline-block;
     width: 158px;
     height: 22px;
-    border: none;
-    background-color: #f2f2f2;
-}
-.rectangle-div-search{
-    position: absolute;
-    background-color: #f2f2f2;
-    border: none;
-    border-radius: 25px;
-    top: 1px;
-    left: 1px;
-    width: 190px;
-    height: 50px;
-}
-.ubiCliente{
-    position:relative;
-    background-color: black;
-    width: 100%;
-    top: 25px;
-}
-.ubicacion-input{
-    position: absolute;
-    background-color: #f2f2f2;
-    border-color: gray;
-    top: 100px;
-    left: -70px;
-}
-.ubicacion-input1{
-    position: absolute;
-    background-color: #f2f2f2;
-    border-color: gray;
-    top: 150px;
-    left: -70px;
 }
 .iconsaxlinearsearchnormal11 {
     position: absolute;
-    top: -25px;
-    left: 200.87px;
+    top: 14.85px;
+    left: 173.87px;
     width: 22.4px;
     height: 23.8px;
     overflow: hidden;
 }
-.rectangle-parent1 {
+.rectangle-container {
     position: absolute;
     top: 8.04px;
     left: 6.32px;
     width: 244.5px;
     height: 54.4px;
 }
-.rectangle-container {
+.rectangle-group {
     position: absolute;
     top: 65px;
     left: 20px;
@@ -274,7 +262,7 @@
 .hammer-icon {
     position: absolute;
     top: 1058px;
-    left: 510px;
+    left: 500px;
     border-radius: 200px;
     width: 291px;
     height: 335px;
@@ -284,7 +272,7 @@
 .text {
     position: absolute;
     top: 0px;
-    left: 6.68px;
+    left: 4.68px;
     display: inline-block;
     height: 13.8px;
     text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
@@ -292,7 +280,7 @@
 .iconsaxlinearmap {
     position: absolute;
     top: -30.62px;
-    left: 20.03px;
+    left: 18.03px;
     width: 26.7px;
     height: 23.7px;
     overflow: hidden;
@@ -325,7 +313,7 @@
 .basic-location {
     position: absolute;
     top: 0px;
-    left: 9.55px;
+    left: 7.55px;
     width: 36px;
     height: 31px;
     overflow: hidden;
@@ -333,16 +321,16 @@
 .group-parent1 {
     position: absolute;
     top: 713px;
-    left: 73.45px;
+    left: 72.45px;
     width: 63.4px;
     height: 49px;
     cursor: pointer;
     color: #000;
 }
-.mapaEntrega {
+.comida {
     position: absolute;
-    top: 115px;
-    left: 36px;
+    top: 238px;
+    left: 35px;
     font-size: 21.28px;
     display: inline-block;
     color: #000;
@@ -351,21 +339,21 @@
 }
 .iconsaxboldi3dcubescan {
     position: absolute;
-    top: 32px;
-    left: 286px;
+    top: 74px;
+    left: 278px;
     width: 55px;
     height: 55px;
     overflow: hidden;
     object-fit: contain;
 }
 .group-child1 {
-    position: relative;
-    top: -110px;
-    left: -20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     border-radius: 15.52px;
     background-color: #f2f2f2;
-    width: 360px;
-    height: 350px;
+    width: 309px;
+    height: 233px;
 }
 .rectangle-wrapper {
     position: absolute;
@@ -377,59 +365,122 @@
 .food-inner1 {
     position: absolute;
     top: 263px;
-    left: 27px;
+    left: 26px;
     width: 309px;
     height: 233px;
 }
+.cantidad-input {
+    position: absolute;
+    top: 102px;
+    left: 258px;
+    width: 70px;
+    height: 27px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+}
+
 .food1 {
     position: absolute;
     top: 0px;
     left: 0px;
     background-color: #fff;
-    width: 360px;
-    height: 800px;
+    width: 349.8px;
+    height: 782px;
     overflow: hidden;
     font-size: 12px;
     color: #4a4b56;
 }
-.rectangle-group {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 802.8px;
-    height: 800px;
-}
-.rectangle-parent {
-    position: absolute;
-    top: 0px;
-    left: -532px;
-    width: 810px;
-    height: 800px;
-    font-size: 19.62px;
-    color: #a4a4a4;
+.selecciona-tu-producto {
+    margin: 0;
+    background-color: #fe6f23;
+    color: white;
+    border: none;
+    font-size: 21px;
 }
 .comida1 {
     position: absolute;
-    top: 154px;
-    left: 30px;
+    top: 33px;
+    left: 532px;
     font-size: 21.28px;
     display: inline-block;
-    color: #000;
+    width: 317px;
+    height: 25px;
+}
+.producto {
+    position: absolute;
+    top: 136px;
+    left: 540px;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: Poppins;
+    text-align: center;
+}
+.vector-parent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 849px;
+    height: 782px;
+}
+.cantidad {
+    position: absolute;
+    top: 184px;
+    left: 768px;
+    font-size: 10px;
+    font-weight: 500;
+}
+.rectangle-parent {
+    position: absolute;
+    top: -105px;
+    left: -508px;
+    width: 849px;
+    height: 782px;
+    font-size: 19.62px;
+}
+.vector-icon {
+    position: absolute;
+    height: 2.42%;
+    width: 5.03%;
+    top: 33.63%;
+    right: 36.08%;
+    bottom: 63.95%;
+    left: 58.89%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.hammer-icon1 {
+    position: absolute;
+    top: 1058px;
+    left: 510px;
+    border-radius: 200px;
+    width: 291px;
+    height: 335px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.comida2 {
+    position: absolute;
+    top: 344px;
+    left: 26px;
+    display: inline-block;
     width: 186px;
     height: 25px;
 }
 .food-inner2 {
     position: absolute;
-    top: 217px;
-    left: 25px;
+    top: 384px;
+    left: 26px;
     width: 309px;
     height: 233px;
 }
-.instance-child {
+.instance-item {
     position: absolute;
     height: 100%;
     width: 100%;
-    top: 250px;
+    top: 0%;
     right: 0%;
     bottom: 0%;
     left: 0%;
@@ -443,9 +494,9 @@
     width: 153px;
     height: 41px;
 }
-.agregar {
+.calcular {
     position: absolute;
-    top: 257px;
+    top: 7px;
     left: 21px;
     font-weight: 600;
     display: inline-block;
@@ -454,8 +505,8 @@
 }
 .instance-parent {
     position: absolute;
-    top: 504px;
-    left: 103px;
+    top: 649px;
+    left: 111px;
     width: 153px;
     height: 41px;
     cursor: pointer;
@@ -463,6 +514,39 @@
     font-size: 16px;
     color: #fff;
     font-family: Poppins;
+}
+.comida3 {
+    position: absolute;
+    top: 169px;
+    left: 29px;
+    display: inline-block;
+    width: 317px;
+    height: 25px;
+}
+.icon-arrow-drop-down-fill {
+    position: absolute;
+    top: 102px;
+    left: 218px;
+    width: 24px;
+    height: 24px;
+}
+.selecciona-tu-producto1 {
+    position: absolute;
+    top: 175px;
+    left: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #808080;
+    width: 200px;
+    height: 38px;
+
+}
+.rectangle-icon {
+    position: absolute;
+    top: 100px;
+    left: 258px;
+    width: 43px;
+    height: 27px;
 }
 .food {
     position: absolute;
@@ -485,8 +569,8 @@
     position: relative;
     height: 800px;
     text-align: left;
-    font-size: 12px;
-    color: #4a4b56;
+    font-size: 21.28px;
+    color: #000;
     font-family: Roboto;
 }
 
