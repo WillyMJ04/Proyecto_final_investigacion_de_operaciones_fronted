@@ -1,0 +1,763 @@
+.informacion-personal {
+    position: absolute;
+    top: 66px;
+    left: 76px;
+    font-size: 24px;
+    font-weight: 900;
+}
+.div {
+    position: relative;
+    font-weight: 500;
+}
+.wrapper {
+    position: absolute;
+    height: 2.25%;
+    width: 8.33%;
+    top: 2.19%;
+    right: 83.78%;
+    bottom: 95.56%;
+    left: 7.88%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #171321;
+}
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50px;
+    background-color: #fe6f23;
+    width: 48px;
+    height: 48px;
+}
+.chevron-right-icon {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    object-fit: contain;
+}
+.rectangle-parent {
+    position: absolute;
+    top: 58px;
+    left: 12px;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+.mis-datos-personales {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-weight: 800;
+    display: inline-block;
+    width: 147px;
+    height: 17px;
+}
+.mis-datos-personales-wrapper {
+    position: absolute;
+    top: 129px;
+    left: 36px;
+    width: 147px;
+    height: 17px;
+    text-align: center;
+}
+.nombre {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-weight: 500;
+    display: inline-block;
+    width: 47.3px;
+    height: 16px;
+}
+.nombre-wrapper {
+    position: absolute;
+    top: 154px;
+    left: 55px;
+    width: 47.3px;
+    height: 16px;
+    text-align: center;
+}
+.fecha-de-nacimiento {
+    position: absolute;
+    top: 103px;
+    left: 0px;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    width: 122px;
+    height: 14px;
+}
+.admin-admin-admin {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    width: 169px;
+    height: 12px;
+}
+.icon-edit-2 {
+    position: absolute;
+    height: 9.02%;
+    width: 4.23%;
+    top: 62.41%;
+    right: 0%;
+    bottom: 28.57%;
+    left: 95.77%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.adminadmincom {
+    position: absolute;
+    top: 82px;
+    left: 0px;
+    font-size: 15px;
+    display: inline-block;
+    width: 169px;
+    height: 12px;
+}
+.ddmmyyyy {
+    position: absolute;
+    top: 121px;
+    left: 0px;
+    font-size: 15px;
+    display: inline-block;
+    width: 169px;
+    height: 12px;
+}
+.fecha-de-nacimiento-parent {
+    position: absolute;
+    top: 175px;
+    left: 55px;
+    width: 260px;
+    height: 133px;
+}
+.numero-de-telefono {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-weight: 500;
+    display: inline-block;
+    width: 117px;
+    height: 15px;
+}
+.numero-de-telefono-wrapper {
+    position: absolute;
+    top: 194px;
+    left: 55px;
+    width: 117px;
+    height: 15px;
+    text-align: center;
+}
+.email {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-weight: 500;
+    display: inline-block;
+    width: 35px;
+    height: 12px;
+}
+.email-wrapper {
+    position: absolute;
+    top: 239px;
+    left: 55px;
+    width: 35px;
+    height: 12px;
+    text-align: center;
+}
+.icon-edit-21 {
+    position: absolute;
+    height: 1.5%;
+    width: 3.06%;
+    top: 21.88%;
+    right: 12.22%;
+    bottom: 76.63%;
+    left: 84.72%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.div1 {
+    position: absolute;
+    top: 218px;
+    left: 55px;
+    font-size: 15px;
+    display: inline-block;
+    width: 169px;
+    height: 12px;
+}
+.icon-edit-22 {
+    position: absolute;
+    height: 1.5%;
+    width: 3.06%;
+    top: 27.25%;
+    right: 12.5%;
+    bottom: 71.25%;
+    left: 84.44%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.icon-edit-23 {
+    position: absolute;
+    height: 1.5%;
+    width: 3.06%;
+    top: 37%;
+    right: 12.78%;
+    bottom: 61.5%;
+    left: 84.17%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.informacionpersonal {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+    width: 360px;
+    height: 800px;
+    overflow: hidden;
+}
+.frame {
+    position: absolute;
+    top: 360px;
+    left: 211px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+}
+.informacionpersonal-parent {
+    width: 100%;
+    position: relative;
+    height: 800px;
+    text-align: left;
+    font-size: 13px;
+    color: #000;
+    font-family: Roboto;
+}
+
+
+.ingrese-su-fecha {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-weight: 800;
+    display: inline-block;
+    width: 188px;
+    height: 17px;
+}
+.ingrese-su-fecha-de-nacimiento-wrapper {
+    position: absolute;
+    top: 19px;
+    left: 20px;
+    width: 188px;
+    height: 17px;
+    font-size: 13px;
+}
+.group-item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 15.52px;
+    background-color: #f2f2f2;
+    width: 208px;
+    height: 27px;
+}
+.ddmmyyyy1 {
+    position: absolute;
+    top: 4px;
+    left: 7px;
+    display: inline-block;
+    width: 201px;
+    height: 23px;
+}
+.rectangle-group {
+    position: absolute;
+    top: 52px;
+    left: 26px;
+    width: 208px;
+    height: 27px;
+    font-size: 15px;
+}
+.instance-child {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 20px;
+    background-color: #fe6f23;
+}
+.rectangle-wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 104px;
+    height: 20px;
+    cursor: pointer;
+}
+.actualizar {
+    position: absolute;
+    top: 2px;
+    left: 12px;
+    font-weight: 600;
+    display: inline-block;
+    width: 79px;
+    height: 13px;
+}
+.instance-parent {
+    position: absolute;
+    top: 89px;
+    left: 183px;
+    width: 104px;
+    height: 20px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    font-family: Poppins;
+}
+.instance-item {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 20px;
+    background-color: #743d73;
+}
+.rectangle-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 104px;
+    height: 20px;
+}
+.cancelar {
+    position: absolute;
+    top: 3px;
+    left: 12px;
+    font-weight: 600;
+    display: inline-block;
+    width: 79px;
+    height: 13px;
+}
+.instance-group {
+    position: absolute;
+    top: 89px;
+    left: 43px;
+    width: 104px;
+    height: 20px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    font-family: Poppins;
+}
+.updatebirthday {
+    width: 330px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    height: 120px;
+    overflow: hidden;
+    max-width: 90%;
+    max-height: 90%;
+    text-align: left;
+    font-size: 10px;
+    color: #000;
+    font-family: Roboto;
+}
+
+
+.ingrese-su-numero {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-weight: 800;
+    display: inline-block;
+    width: 188px;
+    height: 17px;
+}
+.ingrese-su-numero-de-telefono-wrapper {
+    position: absolute;
+    top: 19px;
+    left: 20px;
+    width: 188px;
+    height: 17px;
+    font-size: 13px;
+}
+.group-inner {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 15.52px;
+    background-color: #f2f2f2;
+    width: 208px;
+    height: 27px;
+}
+.div2 {
+    position: absolute;
+    top: 4px;
+    left: 7px;
+    display: inline-block;
+    width: 201px;
+    height: 23px;
+}
+.group-div {
+    position: absolute;
+    top: 52px;
+    left: 26px;
+    width: 208px;
+    height: 27px;
+    font-size: 15px;
+}
+.instance-inner {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 20px;
+    background-color: #fe6f23;
+}
+.rectangle-frame {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 104px;
+    height: 20px;
+}
+.actualizar1 {
+    position: absolute;
+    top: 2px;
+    left: 12px;
+    font-weight: 600;
+    display: inline-block;
+    width: 79px;
+    height: 13px;
+}
+.instance-container {
+    position: absolute;
+    top: 89px;
+    left: 183px;
+    width: 104px;
+    height: 20px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    font-family: Poppins;
+}
+.instance-child1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 20px;
+    background-color: #743d73;
+}
+.cancelar1 {
+    position: absolute;
+    top: 3px;
+    left: 12px;
+    font-weight: 600;
+    display: inline-block;
+    width: 79px;
+    height: 13px;
+}
+.instance-parent1 {
+    position: absolute;
+    top: 89px;
+    left: 43px;
+    width: 104px;
+    height: 20px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    font-family: Poppins;
+}
+.updatephone {
+    width: 330px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    height: 120px;
+    overflow: hidden;
+    max-width: 90%;
+    max-height: 90%;
+    text-align: left;
+    font-size: 10px;
+    color: #000;
+    font-family: Roboto;
+}
+
+
+.ingrese-su-nombre {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-weight: 800;
+    display: inline-block;
+    width: 188px;
+    height: 17px;
+}
+.ingrese-su-nombre-wrapper {
+    position: absolute;
+    top: 19px;
+    left: 20px;
+    width: 188px;
+    height: 17px;
+    font-size: 13px;
+}
+.group-child1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 15.52px;
+    background-color: #f2f2f2;
+    width: 208px;
+    height: 27px;
+}
+.admin-admin-admin1 {
+    position: absolute;
+    top: 4px;
+    left: 7px;
+    display: inline-block;
+    width: 201px;
+    height: 23px;
+}
+.rectangle-parent1 {
+    position: absolute;
+    top: 52px;
+    left: 26px;
+    width: 208px;
+    height: 27px;
+    font-size: 15px;
+}
+.instance-child2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 20px;
+    background-color: #fe6f23;
+}
+.rectangle-wrapper1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 104px;
+    height: 20px;
+}
+.actualizar2 {
+    position: absolute;
+    top: 2px;
+    left: 12px;
+    font-weight: 600;
+    display: inline-block;
+    width: 79px;
+    height: 13px;
+}
+.instance-parent2 {
+    position: absolute;
+    top: 89px;
+    left: 183px;
+    width: 104px;
+    height: 20px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    font-family: Poppins;
+}
+.instance-child3 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 20px;
+    background-color: #743d73;
+}
+.cancelar2 {
+    position: absolute;
+    top: 3px;
+    left: 12px;
+    font-weight: 600;
+    display: inline-block;
+    width: 79px;
+    height: 13px;
+}
+.instance-parent3 {
+    position: absolute;
+    top: 89px;
+    left: 43px;
+    width: 104px;
+    height: 20px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    font-family: Poppins;
+}
+.updatename {
+    width: 330px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    height: 120px;
+    overflow: hidden;
+    max-width: 90%;
+    max-height: 90%;
+    text-align: left;
+    font-size: 10px;
+    color: #000;
+    font-family: Roboto;
+}
+
+
+.ingrese-su-e-mail {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-weight: 800;
+    display: inline-block;
+    width: 188px;
+    height: 17px;
+}
+.ingrese-su-e-mail-wrapper {
+    position: absolute;
+    top: 19px;
+    left: 20px;
+    width: 188px;
+    height: 17px;
+    font-size: 13px;
+}
+.group-child2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 15.52px;
+    background-color: #f2f2f2;
+    width: 208px;
+    height: 27px;
+}
+.adminadmincom1 {
+    position: absolute;
+    top: 4px;
+    left: 7px;
+    display: inline-block;
+    width: 201px;
+    height: 23px;
+}
+.rectangle-parent2 {
+    position: absolute;
+    top: 52px;
+    left: 26px;
+    width: 208px;
+    height: 27px;
+    font-size: 15px;
+}
+.instance-child4 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 20px;
+    background-color: #fe6f23;
+}
+.rectangle-wrapper3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 104px;
+    height: 20px;
+}
+.actualizar3 {
+    position: absolute;
+    top: 2px;
+    left: 12px;
+    font-weight: 600;
+    display: inline-block;
+    width: 79px;
+    height: 13px;
+}
+.instance-parent4 {
+    position: absolute;
+    top: 88px;
+    left: 183px;
+    width: 104px;
+    height: 20px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    font-family: Poppins;
+}
+.instance-child5 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 20px;
+    background-color: #743d73;
+}
+.cancelar3 {
+    position: absolute;
+    top: 3px;
+    left: 12px;
+    font-weight: 600;
+    display: inline-block;
+    width: 79px;
+    height: 13px;
+}
+.instance-parent5 {
+    position: absolute;
+    top: 88px;
+    left: 43px;
+    width: 104px;
+    height: 20px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    font-family: Poppins;
+}
+.updateemail {
+    width: 330px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    height: 120px;
+    overflow: hidden;
+    max-width: 90%;
+    max-height: 90%;
+    text-align: left;
+    font-size: 10px;
+    color: #000;
+    font-family: Roboto;
+}
+

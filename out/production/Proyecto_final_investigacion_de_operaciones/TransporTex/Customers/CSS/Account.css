@@ -1,0 +1,418 @@
+.cuenta {
+    position: absolute;
+    top: 48.46px;
+    left: 102px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.div {
+    position: relative;
+    font-weight: 500;
+}
+.wrapper {
+    position: absolute;
+    height: 2.69%;
+    width: 6.68%;
+    top: 0%;
+    right: 81.21%;
+    bottom: 97.31%;
+    left: 12.11%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: var(--color);
+}
+.frame-icon {
+    position: absolute;
+    height: 1.84%;
+    width: 15.41%;
+    top: 0.49%;
+    right: 20.41%;
+    bottom: 97.67%;
+    left: 64.18%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50px;
+    background-color: var(--orange);
+    width: 48px;
+    height: 48px;
+}
+.chevron-right-icon {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    object-fit: contain;
+}
+.rectangle-parent {
+    position: absolute;
+    top: 40.46px;
+    left: 38px;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+.informacion-personal {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    width: 77px;
+    height: 30px;
+}
+.informacion-personal-wrapper {
+    position: absolute;
+    top: 73px;
+    left: 0px;
+    width: 77px;
+    height: 30px;
+}
+.group-item {
+    position: absolute;
+    top: 0px;
+    left: 2px;
+    border-radius: 15.52px;
+    background-color: var(--grey);
+    width: 71px;
+    height: 62px;
+    cursor: pointer;
+}
+.profile-icon {
+    position: absolute;
+    height: 23.59%;
+    width: 25.06%;
+    top: 18.45%;
+    right: 39.87%;
+    bottom: 57.96%;
+    left: 35.06%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.group-container {
+    position: absolute;
+    top: 224.46px;
+    left: 56px;
+    width: 77px;
+    height: 103px;
+    text-align: center;
+}
+.ayuda {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    width: 76.3px;
+    height: 13.3px;
+}
+.ayuda-wrapper {
+    position: absolute;
+    top: 73px;
+    left: 0px;
+    width: 76.3px;
+    height: 13.3px;
+}
+.group-inner {
+    position: absolute;
+    top: 0px;
+    left: 1.51px;
+    border-radius: 15.52px;
+    background-color: var(--grey);
+    width: 71px;
+    height: 62px;
+}
+.profile-icon1 {
+    position: absolute;
+    height: 28.16%;
+    width: 25.29%;
+    top: 22.02%;
+    right: 39.96%;
+    bottom: 49.83%;
+    left: 34.74%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.group-div {
+    position: absolute;
+    top: 226.46px;
+    left: 280px;
+    width: 76.3px;
+    height: 86.3px;
+    cursor: pointer;
+    text-align: center;
+}
+.cambiar-contarasea {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    white-space: pre-wrap;
+    display: inline-block;
+    width: 76px;
+    height: 30px;
+}
+.cambiar-contarasea-wrapper {
+    position: absolute;
+    top: 73px;
+    left: 0px;
+    width: 76px;
+    height: 30px;
+}
+.profile-icon2 {
+    position: absolute;
+    height: 23.59%;
+    width: 25.39%;
+    top: 18.45%;
+    right: 39.72%;
+    bottom: 57.96%;
+    left: 34.88%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.group-parent1 {
+    position: absolute;
+    top: 224.46px;
+    left: 169px;
+    width: 76px;
+    height: 103px;
+    cursor: pointer;
+    text-align: center;
+}
+.perfil {
+    position: absolute;
+    top: 359.46px;
+    left: 56px;
+    font-size: var(--font-size-xl);
+    font-weight: 900;
+}
+.actividad {
+    position: absolute;
+    top: 514.46px;
+    left: 56px;
+    font-size: var(--font-size-xl);
+    font-weight: 900;
+}
+.basic-location {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+}
+.ubicaciones {
+    position: absolute;
+    top: 0px;
+    left: 46px;
+    display: inline-block;
+    width: 266px;
+}
+.leftSignal {
+    position: absolute;
+    top: 0px;
+    left: 254px;
+    width: 24px;
+    height: 24px;
+}
+.basic-location-parent {
+    position: absolute;
+    top: 407.46px;
+    left: 53px;
+    width: 312px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 21.28px;
+}
+.line-icon {
+    position: absolute;
+    top: 442.46px;
+    left: 8px;
+    max-height: 100%;
+    width: 434px;
+    object-fit: contain;
+    opacity: 0.75;
+}
+.group-child1 {
+    position: absolute;
+    top: 392.46px;
+    left: 0px;
+    max-height: 100%;
+    width: 434px;
+    object-fit: contain;
+    opacity: 0.7;
+}
+.icon-circle-fill {
+    position: absolute;
+    top: 104.46px;
+    left: 170px;
+    width: 74px;
+    height: 72px;
+    object-fit: cover;
+}
+.emailuser {
+    position: absolute;
+    top: 190.46px;
+    left: 103px;
+    text-align: center;
+    display: inline-block;
+    width: 215px;
+    height: 16px;
+}
+.group-icon {
+    position: absolute;
+    height: 4.78%;
+    width: 6.68%;
+    top: 21.43%;
+    right: 44.77%;
+    bottom: 73.79%;
+    left: 48.55%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.gana-por-manejar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    width: 266px;
+}
+.leftSignal1 {
+    position: absolute;
+    top: 0px;
+    left: 208px;
+    width: 24px;
+    height: 24px;
+}
+.gana-por-manejar-parent {
+    position: absolute;
+    top: 460.46px;
+    left: 99px;
+    width: 266px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 21.28px;
+}
+.billetera-parent {
+    position: absolute;
+    top: 570.46px;
+    left: 99px;
+    width: 266px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 21.28px;
+}
+.group-child2 {
+    position: absolute;
+    top: 555.46px;
+    left: 15px;
+    max-height: 100%;
+    width: 434px;
+    object-fit: contain;
+    opacity: 0.7;
+}
+.cerrar-sesion-wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 266px;
+    height: 25px;
+}
+.group-wrapper {
+    position: absolute;
+    top: 644.46px;
+    left: 96px;
+    width: 266px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 21.28px;
+}
+.iconlylightwork {
+    position: absolute;
+    height: 2.72%;
+    width: 4.12%;
+    top: 69.67%;
+    right: 83.41%;
+    bottom: 27.61%;
+    left: 12.47%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.cuenta-parent {
+    position: absolute;
+    top: 17.54px;
+    left: -26px;
+    width: 449px;
+    height: 669.5px;
+}
+.account {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+    width: 360px;
+    height: 800px;
+    overflow: hidden;
+}
+.group-child3 {
+    position: absolute;
+    height: 16.84%;
+    width: 100%;
+    top: 10%;
+    right: 0%;
+    bottom: 83.16%;
+    left: 0%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.group-child4 {
+    position: absolute;
+    height: 23.16%;
+    width: 85%;
+    top: 80%;
+    right: 5%;
+    bottom: 0%;
+    left: 10%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.group-parent2 {
+    position: absolute;
+    height: 11.88%;
+    width: 5.56%;
+    top: 73.13%;
+    right: 87.22%;
+    bottom: 15%;
+    left: 7.22%;
+}
+.account-parent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 360px;
+    height: 800px;
+}
+.group-parent {
+    width: 100%;
+    position: relative;
+    height: 800px;
+    text-align: left;
+    font-size: var(--font-size-smi);
+    color: var(--color-black);
+    font-family: var(--font-roboto);
+}
+

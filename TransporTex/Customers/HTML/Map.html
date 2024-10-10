@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Google</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap">
+    <link rel="stylesheet" href="../CSS/Map.css">
+
+    <!-- API de Google Maps con async, defer y callback para la función initMap -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmT_JUnoisy96sw975ZLhui0fBTOMDwGU&libraries=places&callback=initMap"
+            async defer></script>
+</head>
+<body>
+
+<div class="group-parent">
+    <div class="group-wrapper">
+        <div class="food">
+            <div class="food-inner"></div>
+            <div class="rectangle-parent">
+                <div class="group-child"></div>
+                <div class="vector-parent">
+                    <img class="group-item" src="../../imgs/Customers/Rectangle.png" />
+                    <input id="place-input" class="lugar-de-entrega" type="text" placeholder="Lugar de entrega"/>
+                    <div class="iconsaxlinearsearchnormal1"></div>
+                    <div class="food1">
+                        <div class="food-item"></div>
+                    </div>
+
+                    <b class="comida">Mapa de entrega</b>
+
+                    <div class="food-inner1">
+                        <div class="rectangle-wrapper">
+                            <!-- Contenedor del mapa -->
+                            <div class="group-child1"></div>
+                        </div>
+                    </div>
+
+                    <b class="comida1">
+                        <!-- Menú desplegable para seleccionar productos -->
+                        <select id="product-select" class="selecciona-tu-producto1">
+                            <option value="" disabled selected>Selecciona tu producto</option>
+                            <option value="producto1">Producto 1</option>
+                            <option value="producto2">Producto 2</option>
+                            <option value="producto3">Producto 3</option>
+                        </select>
+
+                    </b>
+                    <div class="producto">Producto</div>
+                </div>
+                <div class="cantidad">cantidad</div>
+            </div>
+
+            <b class="comida2">Mapa de entrega</b>
+            <div class="food-inner2">
+                <div class="rectangle-wrapper">
+                    <div class="rectangle-wrapper">
+                        <div id="map" class="group-child1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="instance-parent" id="groupContainer2">
+                <div class="rectangle-wrapper1">
+                    <div class="instance-item"></div>
+                </div>
+                <div class="calcular">
+                    <button id="calcular-btn" class="selecciona-tu-producto">Calcular</button>
+                </div>
+            </div>
+            <b class="comida3">A donde quieres que lo llevemos?</b>
+            <!-- Reemplazamos la imagen por un input para la cantidad -->
+            <input type="number" id="cantidad-input" class="cantidad-input" placeholder="Cantidad" min="1">
+        </div>
+    </div>
+</div>
+
+<script>
+    let map, autocomplete, marker, selectedPlace;
+
+    function initMap() {
+        console.log("Inicializando el mapa...");
+
+        // Inicializa el mapa centrado en una ubicación predeterminada
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: -34.397, lng: 150.644 },
+            zoom: 8
+        });
+
+        // Vincular el autocompletado al campo de texto
+        var input = document.getElementById('place-input');
+        autocomplete = new google.maps.places.Autocomplete(input);
+        autocomplete.bindTo('bounds', map);
+
+        // Crear un marcador para el mapa
+        marker = new google.maps.Marker({
+            map: map,
+            draggable: true,
+            visible: false  // Inicialmente oculto
+        });
+
+        // Evento que se dispara cuando se selecciona un lugar
+        autocomplete.addListener('place_changed', function () {
+            var place = autocomplete.getPlace();
+            if (!place.geometry) {
+                console.log("No se encontró una geometría disponible para el lugar seleccionado.");
+                return;
+            }
+
+            // Centrar el mapa en el lugar seleccionado
+            if (place.geometry.viewport) {
+                map.fitBounds(place.geometry.viewport);
+            } else {
+                map.setCenter(place.geometry.location);
+                map.setZoom(15);
+            }
+
+            // Colocar el marcador en el lugar seleccionado
+            marker.setPosition(place.geometry.location);
+            marker.setVisible(true);
+
+            // Guardar el lugar seleccionado globalmente
+            selectedPlace = place;
+
+            // Habilitar el botón "Calcular"
+            document.getElementById('calcular-btn').disabled = false;
+        });
+
+        console.log("Mapa y autocompletado inicializados correctamente");
+    }
+
+    window.onload = function() {
+        console.log("Ventana cargada, llamando a initMap...");
+        initMap();
+
+        // Capturar la selección del producto
+        const productSelect = document.getElementById('product-select');
+        const calcularBtn = document.getElementById('calcular-btn');
+
+        // Manejar el clic en el botón Calcular
+        calcularBtn.addEventListener('click', function() {
+            const selectedProduct = productSelect.value;
+            const quantity = document.getElementById('cantidad-input').value;
+
+            if (selectedPlace && selectedPlace.geometry) {
+                const location = selectedPlace.geometry.location;
+                alert(`Producto: ${selectedProduct}\nCantidad: ${quantity}\nUbicación: ${selectedPlace.name}, ${location.lat()}, ${location.lng()}`);
+            } else {
+                alert("Por favor, selecciona un lugar válido.");
+            }
+        });
+
+        // Deshabilitar el botón Calcular hasta que se seleccione un lugar
+        calcularBtn.disabled = true;
+    };
+
+</script>
+
+</body>
+</html>
