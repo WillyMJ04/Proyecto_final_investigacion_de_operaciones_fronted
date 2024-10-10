@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" />
     <link rel="stylesheet" href="../CSS/Map.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmT_JUnoisy96sw975ZLhui0fBTOMDwGU&libraries=places,geocoder"></script>
 
 </head>
 <body>
@@ -14,104 +15,155 @@
 <div class="group-parent">
     <div class="group-wrapper">
         <div class="food">
-            <img class="food-child" src="../../imgs/Customers/LineOrange.png"/>
-            <div class="food-item"></div>
-            <div class="profile">
-                <div class="perfil">Perfil</div>
-                <img class="iconlylight-outlineprofile" src="../../imgs/Customers/Profile.png"/>
-            </div>
-            <div class="inicio-parent">
-                <div class="inicio">Inicio</div>
-                <img class="iconsaxlinearhome2" src="../../imgs/Customers/home2.png"/>
-            </div>
-            <div class="food-inner"></div>
-            <img class="group-icon" src="../../imgs/Customers/send_buttom.png"/>
-            <div class="group-container">
-                <div class="chat-wrapper">
-                    <div class="chat">Chat</div>
-                </div>
-                <img class="chat-icon" src="../../imgs/Customers/Chat.png"/>
-            </div>
-            <div class="rectangle-parent">
-                <div class="group-child"></div>
-                <div class="rectangle-group">
-                    <div class="group-item"></div>
-                </div>
-            </div>
-            <div class="wrapper">
-            </div>
-            <div class="group-container">
-                <div class="chat-wrapper">
-                    <div class="chat">Chat</div>
-                </div>
-            </div>
+            <!-- Otros elementos que ya tienes en tu código -->
             <div class="rectangle-container">
                 <div class="group-inner"></div>
                 <div class="rectangle-parent1">
-                    <div class="rectangle-div"></div>
-                    <div class="lugar-de-entrega1">Lugar de entrega</div>
-                    <img class="iconsaxlinearsearchnormal11" src="../../imgs/Customers/Lupa.png"/></div>
-            </div>
-            <div class="group-parent1" id="groupContainer3">
-                <div class="group-frame">
-                    <div class="text-parent">
-                        <div class="text"></div>
-                        <div class="ubicacion">Ubicacion</div>
+                    <div class="rectangle-div">
+                        <input id="pac-input" class="rectangle-div-search" type="text" placeholder="Busqueda" />
+                        <button class="search-btn"></button>
                     </div>
+                    <img class="iconsaxlinearsearchnormal11" src="../../imgs/Customers/Lupa.png"/>
                 </div>
-                <img class="basic-location" src="../../imgs/Customers/location.png"/></div>
-            <b class="mapaEntrega">Mapa de entrega</b>
-            <img class="iconsaxboldi3dcubescan" src="../../imgs/Customers/carrier.png"/>
+            </div>
+
+            <b class="mapaEntrega">Mapa</b>
             <div class="food-inner1">
                 <div class="rectangle-wrapper">
-                    <div class="group-child1"></div>
+                    <!-- Mapa dentro del cuadro gris -->
+                    <div id="map" class="group-child1"></div>
                 </div>
             </div>
+
+            <!-- Campos para la ubicación del cliente y del proveedor -->
             <div class="instance-parent" id="groupContainer5">
+                <div>
+                    <label class="ubiCliente" for="cliente-ubicacion">Calculo kms</label>
+                    <input type="text" id="cliente-ubicacion" class="ubicacion-input" placeholder="Donde lo deseas" readonly>
+                    <button id="btnSelectCliente">Buscar</button>
+                </div>
+                <div>
+                    <label for="proveedor-ubicacion">Dirección del proveedor:</label>
+                    <input type="text" id="proveedor-ubicacion" class="ubicacion-input1" placeholder="Ubicacion del proveedor" readonly>
+                    <button id="btnSelectProveedor">Buscar</button>
+                </div>
                 <div class="rectangle-wrapper1">
                     <div class="instance-child"></div>
                 </div>
-                <div class="agregar">Agregar</div>
+                <div class="agregar">Guardar</div>
             </div>
         </div>
     </div>
 </div>
 
 <script>
-    var profileContainer = document.getElementById("profileContainer");
-    if(profileContainer) {
-        profileContainer.addEventListener("click", function (e) {
-            // Add your code here
+    var geocoder;
+
+    function initMap() {
+        // Inicializar el mapa
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: -34.397, lng: 150.644 }, // Cambia esta ubicación según tu necesidad
+            zoom: 8
+        });
+
+        // Inicializar el geocoder
+        geocoder = new google.maps.Geocoder();
+
+        // Referencia al input de búsqueda
+        var input = document.getElementById('pac-input');
+        var searchBox = new google.maps.places.SearchBox(input);
+
+        // Sesgado del cuadro de búsqueda en el mapa actual
+        map.addListener('bounds_changed', function () {
+            searchBox.setBounds(map.getBounds());
+        });
+
+        var markers = [];
+
+        // Evento cuando el usuario selecciona un lugar de las sugerencias
+        searchBox.addListener('places_changed', function () {
+            var places = searchBox.getPlaces();
+
+            if (places.length === 0) {
+                return;
+            }
+
+            // Eliminar los marcadores anteriores
+            markers.forEach(function (marker) {
+                marker.setMap(null);
+            });
+            markers = [];
+
+            // Ajustar los límites del mapa para los nuevos resultados
+            var bounds = new google.maps.LatLngBounds();
+            places.forEach(function (place) {
+                if (!place.geometry) {
+                    console.log("Returned place contains no geometry");
+                    return;
+                }
+
+                // Crear un marcador para cada lugar
+                var marker = new google.maps.Marker({
+                    map: map,
+                    title: place.name,
+                    position: place.geometry.location
+                });
+
+                markers.push(marker);
+
+                // Ajustar el área visible del mapa
+                if (place.geometry.viewport) {
+                    bounds.union(place.geometry.viewport);
+                } else {
+                    bounds.extend(place.geometry.location);
+                }
+            });
+            map.fitBounds(bounds);
+        });
+
+        // Evento para capturar clics en el mapa y actualizar los inputs
+        map.addListener('click', function (event) {
+            var latLng = event.latLng;
+            var clienteInput = document.getElementById('cliente-ubicacion');
+            var proveedorInput = document.getElementById('proveedor-ubicacion');
+
+            // Llamar al geocoder para convertir las coordenadas en una dirección
+            geocodeLatLng(latLng, function (address) {
+                if (clienteInput.value === "") {
+                    clienteInput.value = address;
+                } else {
+                    proveedorInput.value = address;
+                }
+            });
+
+            // Agregar un marcador en la posición seleccionada
+            var marker = new google.maps.Marker({
+                position: latLng,
+                map: map
+            });
+
+            markers.push(marker);
         });
     }
 
-    var groupContainer = document.getElementById("groupContainer");
-    if(groupContainer) {
-        groupContainer.addEventListener("click", function (e) {
-            // Add your code here
+    // Función para convertir coordenadas a una dirección
+    function geocodeLatLng(latLng, callback) {
+        geocoder.geocode({ location: latLng }, function (results, status) {
+            if (status === "OK") {
+                if (results[0]) {
+                    callback(results[0].formatted_address); // Devolver la dirección formateada
+                } else {
+                    callback("No se encontró dirección.");
+                }
+            } else {
+                console.log("Geocodificación fallida debido a: " + status);
+                callback("Error al obtener la dirección.");
+            }
         });
     }
 
-    var group = document.getElementById("group");
-    if(group) {
-        group.addEventListener("click", function (e) {
-            // Add your code here
-        });
-    }
-
-    var groupContainer3 = document.getElementById("groupContainer3");
-    if(groupContainer3) {
-        groupContainer3.addEventListener("click", function (e) {
-            // Add your code here
-        });
-    }
-
-    var groupContainer5 = document.getElementById("groupContainer5");
-    if(groupContainer5) {
-        groupContainer5.addEventListener("click", function (e) {
-            // Add your code here
-        });
-    }
+    // Ejecutar la función para inicializar el mapa cuando la página cargue
+    window.onload = initMap;
 </script>
 
 </body>
