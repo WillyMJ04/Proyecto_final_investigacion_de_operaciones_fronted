@@ -45,8 +45,8 @@ const Users = () => {
   const { isLoading, data } = useQuery({
     queryKey: ["allusers"],
     queryFn: () =>
-      fetch("http://localhost:5500/api/users").then((res) => res.json()),
-  });
+      fetch("http://192.168.1.10:8080/cliente?page=0&size=1&sort=string").then((res) => res.json()),
+  });
 
   return (
     <div className="users">
@@ -54,11 +54,11 @@ const Users = () => {
         <h1>Users</h1>
         <button onClick={() => setOpen(true)}>Add New User</button>
       </div>
-      {isLoading ? (
+       {isLoading ? (
         "Loading..."
       ) : (
         <DataTable slug="users" columns={columns} rows={data} />
-      )}
+      )} 
       {open && <Add slug="user" columns={columns} setOpen={setOpen} />}
     </div>
   );

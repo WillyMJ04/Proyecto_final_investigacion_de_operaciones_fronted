@@ -97,7 +97,7 @@ const Products = () => {
   const { isLoading, data } = useQuery({
     queryKey: ["allproducts"],
     queryFn: () =>
-      fetch("http://localhost:5500/api/users").then((res) => res.json()),
+      fetch("http://localhost:8080/cliente?page=0&size=1&sort=string").then((res) => res.json()),
   });
 
   return (
