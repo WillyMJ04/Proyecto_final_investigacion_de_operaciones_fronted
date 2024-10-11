@@ -45,7 +45,7 @@ const Users = () => {
   const { isLoading, data } = useQuery({
     queryKey: ["allusers"],
     queryFn: () =>
-      fetch("http://192.168.1.10:8080/cliente?page=0&size=1&sort=string").then((res) => res.json()),
+      fetch("http://localhost:8081/cliente?page=0&size=1&sort=id").then((res) => res.json()),
   });
 
   return (
