@@ -168,21 +168,25 @@
 .confirmar {
     position: absolute;
     top: 650px;
-    left: 202px;
+    left: 200px;
     font-size: 16px;
     font-weight: 600;
     font-family: Poppins;
     color: #fff;
+    background-color: #fe6f23;
+    border: none;
     text-align: center;
 }
 .atras {
     position: absolute;
     top: 650px;
-    left: 71px;
+    left: 65px;
     font-size: 16px;
     font-weight: 600;
     font-family: Poppins;
     color: #fff;
+    background-color: #fe6f23;
+    border: none;
     text-align: center;
 }
 .food-child2 {

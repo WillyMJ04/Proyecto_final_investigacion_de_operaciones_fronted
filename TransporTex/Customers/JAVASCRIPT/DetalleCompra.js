@@ -26,7 +26,7 @@ function solicitarDatos() {
 function actualizarDetalleCompra(datos) {
     document.getElementById('nombre-producto').textContent = datos.producto;
     document.getElementById('cantidad-producto').textContent = datos.cantidad;
-    document.getElementById('precio-unitario').textContent =  datos.precioUnitario.toFixed(2);
+    document.getElementById('precio-unitario').textContent = datos.precioUnitario.toFixed(2);
     document.getElementById('tiempo-estimado').textContent = datos.tiempoEstimado;
 
     // Calcular el total de productos multiplicando cantidad por precio unitario
@@ -34,7 +34,7 @@ function actualizarDetalleCompra(datos) {
     document.getElementById('precio-productos').textContent = totalProductos.toFixed(2);
 
     // Mostrar el precio de envío
-    document.getElementById('precio-envio').textContent =  datos.precioEnvio.toFixed(2);
+    document.getElementById('precio-envio').textContent = datos.precioEnvio.toFixed(2);
 
     // Calcular el total a pagar (productos + envío)
     const totalPagar = totalProductos + datos.precioEnvio;
@@ -64,3 +64,16 @@ window.onload = function() {
     // Luego de que la página esté lista, pedir los datos
     manejarDatos();
 };
+
+// Función para el botón "Atrás"
+document.getElementById('btn-atras').onclick = function() {
+    // Redirige a la página Map.html
+    window.location.href = 'Map.html';
+};
+
+// Función para el botón "Confirmar"
+document.getElementById('btn-confirmar').onclick = function() {
+    // Alerta al confirmar
+    alert("Su pedido está en ruta.");
+};
+dan
