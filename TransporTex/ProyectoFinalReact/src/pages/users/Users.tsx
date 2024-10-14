@@ -1,4 +1,6 @@
 import { GridColDef } from "@mui/x-data-grid";
+import { DataGrid } from "@mui/x-data-grid";
+
 import DataTable from "../../components/dataTable/DataTable";
 import "./Users.scss";
 import { useState } from "react";
@@ -7,31 +9,32 @@ import { useQuery } from "@tanstack/react-query";
 
 const columns: GridColDef[] = [
   { 
-    field: "id_cliente", 
+    field: "ID", 
+    type: "number",
     headerName: "ID", 
     width: 90 },
   {
     field: "nombre",
     type: "string",
-    headerName: "First name",
+    headerName: "Nombre",
     width: 150,
   },
   {
-    field: "apellido",
+    field: "direccion",
     type: "string",
-    headerName: "Last name",
+    headerName: "Direccion",
     width: 150,
+  },
+  {
+    field: "telefono",
+    type: "string",
+    headerName: "Telefono",
+    width: 200,
   },
   {
     field: "email",
     type: "string",
     headerName: "Email",
-    width: 200,
-  },
-  {
-    field: "telefono",
-    type: "string",
-    headerName: "Phone",
     width: 200,
   },
   
@@ -42,11 +45,27 @@ const Users = () => {
 
   // TEST THE API
 
-  const { isLoading, data } = useQuery({
+  const { isLoading, data, error } = useQuery({
     queryKey: ["allusers"],
     queryFn: () =>
-      fetch("http://localhost:8081/cliente?page=0&size=1&sort=id").then((res) => res.json()),
-  });
+      fetch("http://localhost:8081/cliente/todos", {
+        method: 'GET',
+        credentials: 'include', // Incluye las credenciales si es necesario
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Basic ' + btoa('admin:admin123'), // Autenticación básica
+        },
+      }).then((res) => {
+        if (!res.ok) {
+          throw new Error('Error fetching data');
+        }
+        return res.json();
+      }),
+  });
+
+console.log(data)
+
+
 
   return (
     <div className="users">
@@ -57,9 +76,17 @@ const Users = () => {
        {isLoading ? (
         "Loading..."
       ) : (
-        <DataTable slug="users" columns={columns} rows={data} />
+        <DataTable
+  slug="cliente"
+  columns={columns}
+  getRowId={(row: any) => row.idCliente} // Aquí especificas que idCliente es el identificador único
+  rows={data}
+/>
+
+   
+        
       )} 
-      {open && <Add slug="user" columns={columns} setOpen={setOpen} />}
+      {open && <Add slug="cliente" columns={columns} setOpen={setOpen} />}
     </div>
   );
 };

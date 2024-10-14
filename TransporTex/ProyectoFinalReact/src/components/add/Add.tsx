@@ -1,6 +1,7 @@
 import { GridColDef } from "@mui/x-data-grid";
 import "./add.scss";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { useState, useEffect } from "react";
 
 type Props = {
   slug: string;
@@ -9,42 +10,64 @@ type Props = {
 };
 
 const Add = (props: Props) => {
-  // TEST THE API
+  // Estado para controlar los valores del formulario dinámico
+  const [formValues, setFormValues] = useState<{ [key: string]: any }>({});
+
+  useEffect(() => {
+    // Inicializa los valores del formulario dinámicamente basado en las columnas recibidas
+    const initialFormValues: { [key: string]: any } = {};
+    props.columns
+      .filter((column) => column.field !== "ID") // Filtrar el campo 'ID'
+      .forEach((column) => {
+        initialFormValues[column.field] = column.type === "boolean" ? false : "";
+      });
+    setFormValues(initialFormValues);
+  }, [props.columns]);
 
   const queryClient = useQueryClient();
 
+  // Mutación para enviar los datos
   const mutation = useMutation({
-    mutationFn: () => {
-      return fetch(`http://localhost:8800/api/${props.slug}s`, {
-        method: "post",
+    mutationFn: async () => {
+      const response = await fetch(`http://localhost:8081/${props.slug}`, {
+        method: "POST",
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          id: 111,
-          img: "",
-          lastName: "Hello",
-          firstName: "Test",
-          email: "testme@gmail.com",
-          phone: "123 456 789",
-          createdAt: "01.02.2023",
-          verified: true,
-        }),
+        body: JSON.stringify(formValues),
       });
+
+      if (!response.ok) {
+        throw new Error("Error en la solicitud");
+      }
+
+      return response.json(); // Si necesitas manejar la respuesta
     },
     onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: [`all${props.slug}`]});
+      queryClient.invalidateQueries({ queryKey: [`all${props.slug}`] });
+    },
+    onError: (error: any) => {
+      console.error("Error al agregar:", error);
     },
   });
 
+  // Manejo del envío del formulario
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    //add new item
-    mutation.mutate();
-    props.setOpen(false);
+    mutation.mutate(); // Ejecuta la mutación
+    props.setOpen(false); // Cierra el modal después del envío
   };
+
+  // Manejo de los cambios en los inputs dinámicos
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value, type, checked } = e.target;
+    setFormValues((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? checked : value, // Actualiza el estado dependiendo del tipo de input
+    }));
+  };
+
   return (
     <div className="add">
       <div className="modal">
@@ -54,14 +77,23 @@ const Add = (props: Props) => {
         <h1>Add new {props.slug}</h1>
         <form onSubmit={handleSubmit}>
           {props.columns
-            .filter((item) => item.field !== "id" && item.field !== "img")
+            .filter((item) => item.field !== "ID" && item.field !== "img") // Evitar renderizar el campo 'ID'
             .map((column) => (
-              <div className="item">
+              <div className="item" key={column.field}>
                 <label>{column.headerName}</label>
-                <input type={column.type} placeholder={column.field} />
+                <input
+                  name={column.field}
+                  type={column.type === "boolean" ? "checkbox" : "text"}
+                  placeholder={column.headerName}
+                  value={formValues[column.field] || ""}
+                  onChange={handleChange}
+                  checked={column.type === "boolean" ? formValues[column.field] : undefined}
+                />
               </div>
             ))}
-          <button>Send</button>
+          <button type="submit" disabled={mutation.status === "loading"}>
+            {mutation.status === "loading" ? "Sending..." : "Send"}
+          </button>
         </form>
       </div>
     </div>
@@ -69,3 +101,4 @@ const Add = (props: Props) => {
 };
 
 export default Add;
+

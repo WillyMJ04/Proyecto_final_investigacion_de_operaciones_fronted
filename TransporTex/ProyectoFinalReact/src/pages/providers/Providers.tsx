@@ -6,10 +6,11 @@ import Add from "../../components/add/Add";
 import { useQuery } from "@tanstack/react-query";
 
 const columns: GridColDef[] = [
-  { 
-    field: "id_proveedor", 
-    headerName: "ID", 
-    width: 90 },
+  {
+    field: "ID",
+    headerName: "ID",
+    width: 90,
+  },
   {
     field: "nombre_proveedor",
     type: "string",
@@ -28,7 +29,6 @@ const columns: GridColDef[] = [
     headerName: "Estado",
     width: 200,
   },
-  
 ];
 
 const Providers = () => {
@@ -39,7 +39,7 @@ const Providers = () => {
   const { isLoading, data } = useQuery({
     queryKey: ["allproviders"],
     queryFn: () =>
-      fetch("http://localhost:5500/api/users").then((res) => res.json()),
+      fetch("http://localhost:8081/proveedor/todos").then((res) => res.json()),
   });
 
   return (
@@ -51,7 +51,12 @@ const Providers = () => {
       {isLoading ? (
         "Loading..."
       ) : (
-        <DataTable slug="providers" columns={columns} rows={data} />
+        <DataTable
+          slug="cliente"
+          columns={columns}
+          getRowId={(row: any) => row.idCliente} // Aquí especificas que idCliente es el identificador único
+          rows={data}
+        />
       )}
       {open && <Add slug="providers" columns={columns} setOpen={setOpen} />}
     </div>

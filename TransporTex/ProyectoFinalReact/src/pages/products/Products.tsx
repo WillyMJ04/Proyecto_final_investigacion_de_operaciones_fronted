@@ -1,69 +1,75 @@
 import { useState } from "react";
-import "./products.scss"
+import "./products.scss";
 import DataTable from "../../components/dataTable/DataTable";
 import Add from "../../components/add/Add";
 import { GridColDef } from "@mui/x-data-grid";
 import { productRows } from "../../data";
 import { useQuery } from "@tanstack/react-query";
-import Product from '../product/Product';
+import Product from "../product/Product";
 
 const columns: GridColDef[] = [
-  { field: "id_producto", 
-    headerName: "ID", 
-    width: 90 },
-  {
-    field: "nombre_producto",
-    headerName: "Nombre Producto",
-    width: 100,
-    renderCell: (params) => {
-      return <img src={params.row.img} alt="" />;
-    },
-  },
-  {
-    field: "tipo_producto",
-    type: "string",
-    headerName: "Tipo Producto",
-    width: 250,
-  },
+  { field: "id", headerName: "ID", width: 90,editable: true },
+  { field: "img", headerName: "imagen", width: 90 },
+  { field: "title", headerName: "titulo", width: 90 },
+  { field: "producer", headerName: "producer", width: 90 },
+  { field: "price", headerName: "price", width: 90 },
+  { field: "createAt", headerName: "createAt", width: 90 },
+  // { field: "id_producto",
+  //   headerName: "ID",
+  //   width: 90 },
+  // {
+  //   field: "nombre_producto",
+  //   headerName: "Nombre Producto",
+  //   width: 100,
+  //   renderCell: (params) => {
+  //     return <img src={params.row.img} alt="" />;
+  //   },
+  // },
+  // {
+  //   field: "tipo_producto",
+  //   type: "string",
+  //   headerName: "Tipo Producto",
+  //   width: 250,
+  // },
 
-  {
-    field: "peso_producto",
-    type: "number",
-    headerName: "Peso Producto",
-    width: 150,
-  },
+  // {
+  //   field: "peso_producto",
+  //   type: "number",
+  //   headerName: "Peso Producto",
+  //   width: 150,
+  // },
 
-  {
-    field: "estado",
-    headerName: "Estado",
-    type: "number",
-    width: 150,
-  },
-  {
-    field: "usuario_creo",
-    headerName: "Usuario Creador",
-    type: "string",
-    width: 200,
-  },
-  {
-    field: "fecha_creo",
-    headerName: "Fecha Creacion",
-    type: "string",
-    width: 200,
-  },
-  {
-    field: "usuario_modifico",
-    headerName: "Usuario Modifico",
-    type: "string",
-    width: 150,
-  },
-  {
-    field: "fecha_modifico",
-    headerName: "Fecha Modifico",
-    type: "string",
-    width: 200,
-  },
-/*  {
+  // {
+  //   field: "estado",
+  //   headerName: "Estado",
+  //   type: "number",
+  //   width: 150,
+  // },
+  // {
+  //   field: "usuario_creo",
+  //   headerName: "Usuario Creador",
+  //   type: "string",
+  //   width: 200,
+  // },
+  // {
+  //   field: "fecha_creo",
+  //   headerName: "Fecha Creacion",
+  //   type: "string",
+  //   width: 200,
+  // },
+  // {
+  //   field: "usuario_modifico",
+  //   headerName: "Usuario Modifico",
+  //   type: "string",
+  //   width: 150,
+  // },
+  // {
+  //   field: "fecha_modifico",
+  //   headerName: "Fecha Modifico",
+  //   type: "string",
+  //   width: 200,
+  // },
+  /*  {
     field: "action",
     headerName: "Actions",
     width: 100,
@@ -77,7 +83,7 @@ const columns: GridColDef[] = [
     },
   },
 */
-/* 
+  /* 
 Use  this function to any kind of union of two different data or even to summarize the results
 {
     field: "fullName",
@@ -97,7 +103,7 @@ const Products = () => {
   const { isLoading, data } = useQuery({
     queryKey: ["allproducts"],
     queryFn: () =>
-      fetch("http://localhost:8080/cliente?page=0&size=1&sort=string").then((res) => res.json()),
+      fetch("http://localhost:8081/productos").then((res) => res.json()),
   });
 
   return (
@@ -109,11 +115,16 @@ const Products = () => {
       {isLoading ? (
         "Loading..."
       ) : (
-        <DataTable slug="products" columns={columns} rows={data} />
+        <DataTable
+          slug="products"
+          columns={columns}
+          rowID={(row: any) => row?.idProductos}
+          rows={productRows}
+        />
       )}
       {open && <Add slug="products" columns={columns} setOpen={setOpen} />}
     </div>
   );
-}
+};
 
-export default Products
+export default Products;
