@@ -98,6 +98,6 @@ const DataTable = (props: Props) => {
       />
     </div>
   );
-}; ,
+}; 
 
 export default DataTable;
