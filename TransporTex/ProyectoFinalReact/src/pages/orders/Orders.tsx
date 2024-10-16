@@ -6,10 +6,11 @@ import Add from "../../components/add/Add";
 import { useQuery } from "@tanstack/react-query";
 
 const columns: GridColDef[] = [
-  { 
-    field: "id", 
-    headerName: "ID", 
-    width: 90 },
+  {
+    field: "ID",
+    headerName: "ID",
+    width: 90,
+  },
   {
     field: "pedido_id",
     type: "number",
@@ -59,10 +60,22 @@ const Orders = () => {
 
   // TEST THE API
 
-  const { isLoading, data } = useQuery({
+  const { isLoading, data, error } = useQuery({
     queryKey: ["allorders"],
     queryFn: () =>
-      fetch("http://localhost:5500/api/users").then((res) => res.json()),
+      fetch("http://localhost:8081/ordenes/todos", {
+        method: "GET",
+        credentials: "include", // Incluye las credenciales si es necesario
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: "Basic " + btoa("admin:admin123"), // Autenticación básica
+        },
+      }).then((res) => {
+        if (!res.ok) {
+          throw new Error("Error fetching data");
+        }
+        return res.json();
+      }),
   });
 
   return (
@@ -74,7 +87,12 @@ const Orders = () => {
       {isLoading ? (
         "Loading..."
       ) : (
-        <DataTable slug="orders" columns={columns} rows={data} />
+        <DataTable
+          slug="cliente"
+          columns={columns}
+          getRowId={(row: any) => row.ID} // Aquí especificas que idCliente es el identificador único
+          rows={data}
+        />
       )}
       {open && <Add slug="orders" columns={columns} setOpen={setOpen} />}
     </div>

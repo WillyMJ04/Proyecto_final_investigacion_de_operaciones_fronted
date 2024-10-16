@@ -37,7 +37,7 @@ const Providers = () => {
   // TEST THE API
 
   const { isLoading, data } = useQuery({
-    queryKey: ["allproviders"],
+    queryKey: ["allusers"],
     queryFn: () =>
       fetch("http://localhost:8081/proveedor/todos").then((res) => res.json()),
   });
@@ -52,13 +52,13 @@ const Providers = () => {
         "Loading..."
       ) : (
         <DataTable
-          slug="cliente"
+          slug="proveedor"
           columns={columns}
           getRowId={(row: any) => row.idCliente} // Aquí especificas que idCliente es el identificador único
           rows={data}
         />
       )}
-      {open && <Add slug="providers" columns={columns} setOpen={setOpen} />}
+      {open && <Add slug="proveedor" columns={columns} setOpen={setOpen} />}
     </div>
   );
 };

@@ -8,67 +8,33 @@ import { useQuery } from "@tanstack/react-query";
 import Product from "../product/Product";
 
 const columns: GridColDef[] = [
-  { field: "id", headerName: "ID", width: 90,editable: true },
-  { field: "img", headerName: "imagen", width: 90 },
-  { field: "title", headerName: "titulo", width: 90 },
-  { field: "producer", headerName: "producer", width: 90 },
-  { field: "price", headerName: "price", width: 90 },
-  { field: "createAt", headerName: "createAt", width: 90 },
-  // { field: "id_producto",
-  //   headerName: "ID",
-  //   width: 90 },
-  // {
-  //   field: "nombre_producto",
-  //   headerName: "Nombre Producto",
-  //   width: 100,
-  //   renderCell: (params) => {
-  //     return <img src={params.row.img} alt="" />;
-  //   },
-  // },
-  // {
-  //   field: "tipo_producto",
-  //   type: "string",
-  //   headerName: "Tipo Producto",
-  //   width: 250,
-  // },
+  { field: "ID", type: "number", headerName: "ID", width: 90 },
+  {
+    field: "nombre_producto",
+    headerName: "Nombre Producto",
+    width: 100,
+  },
+  {
+    field: "tipoProducto",
+    type: "string",
+    headerName: "Tipo Producto",
+    width: 250,
+  },
 
-  // {
-  //   field: "peso_producto",
-  //   type: "number",
-  //   headerName: "Peso Producto",
-  //   width: 150,
-  // },
+  {
+    field: "pesoProducto",
+    type: "number",
+    headerName: "Peso Producto",
+    width: 150,
+  },
 
-  // {
-  //   field: "estado",
-  //   headerName: "Estado",
-  //   type: "number",
-  //   width: 150,
-  // },
-  // {
-  //   field: "usuario_creo",
-  //   headerName: "Usuario Creador",
-  //   type: "string",
-  //   width: 200,
-  // },
-  // {
-  //   field: "fecha_creo",
-  //   headerName: "Fecha Creacion",
-  //   type: "string",
-  //   width: 200,
-  // },
-  // {
-  //   field: "usuario_modifico",
-  //   headerName: "Usuario Modifico",
-  //   type: "string",
-  //   width: 150,
-  // },
-  // {
-  //   field: "fecha_modifico",
-  //   headerName: "Fecha Modifico",
-  //   type: "string",
-  //   width: 200,
-  // },
+  {
+    field: "estado",
+    headerName: "Estado",
+    type: "number",
+    width: 150,
+  },
+
   /*  {
     field: "action",
     headerName: "Actions",
@@ -100,10 +66,22 @@ const Products = () => {
 
   // TEST THE API
 
-  const { isLoading, data } = useQuery({
+  const { isLoading, data, error } = useQuery({
     queryKey: ["allproducts"],
     queryFn: () =>
-      fetch("http://localhost:8081/productos").then((res) => res.json()),
+      fetch("http://localhost:8081/producto", {
+        method: "GET",
+        credentials: "include", // Incluye las credenciales si es necesario
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: "Basic " + btoa("admin:admin123"), // Autenticación básica
+        },
+      }).then((res) => {
+        if (!res.ok) {
+          throw new Error("Error fetching data");
+        }
+        return res.json();
+      }),
   });
 
   return (
@@ -116,13 +94,13 @@ const Products = () => {
         "Loading..."
       ) : (
         <DataTable
-          slug="products"
+          slug="producto"
           columns={columns}
-          rowID={(row: any) => row?.idProductos}
-          rows={productRows}
+          getRowId={(row: any) => row.idProducto} // Aquí especificas que idCliente es el identificador único
+          rows={data}
         />
       )}
-      {open && <Add slug="products" columns={columns} setOpen={setOpen} />}
+      {open && <Add slug="producto" columns={columns} setOpen={setOpen} />}
     </div>
   );
 };

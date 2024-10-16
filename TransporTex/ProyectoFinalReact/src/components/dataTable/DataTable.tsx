@@ -22,7 +22,7 @@ const DataTable = (props: Props) => {
       // Si la respuesta no es OK, lanzamos un error
       if (!response.ok) {
         const errorMessage = await response.text();  // Para capturar el mensaje de error
-        throw new Error(`Error al eliminar el cliente: ${errorMessage}`);
+        throw new Error(`Eliminado de : ${errorMessage}`);
       }
   
       return response.json();  // Devuelve el cuerpo de la respuesta si es necesario
@@ -33,8 +33,8 @@ const DataTable = (props: Props) => {
     },
     onError: (error: any) => {
       // Captura errores y muestra un mensaje
-      console.error("Error eliminando el cliente:", error.message);
-      alert(`Error eliminando el cliente: ${error.message}`);
+      console.error("Completado :", error.message);
+      alert(`Eliminacion completada: ${error.message}`);
     },
   });
   
@@ -98,6 +98,6 @@ const DataTable = (props: Props) => {
       />
     </div>
   );
-}; 
+};
 
 export default DataTable;

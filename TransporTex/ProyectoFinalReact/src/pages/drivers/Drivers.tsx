@@ -48,15 +48,26 @@ const Drivers = () => {
   const [open, setOpen] = useState(false);
 
   // TEST THE API
-
-  const { isLoading, data } = useQuery({
-    queryKey: ["allproviders"],
+  const { isLoading, data, error } = useQuery({
+    queryKey: ["allusers"],
     queryFn: () =>
-      fetch("http://localhost:5500/api/users").then((res) => res.json()),
+      fetch("http://localhost:8081/conductor", {
+        method: "GET",
+        credentials: "include", // Incluye las credenciales si es necesario
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: "Basic " + btoa("admin:admin123"), // Autenticación básica
+        },
+      }).then((res) => {
+        if (!res.ok) {
+          throw new Error("Error fetching data");
+        }
+        return res.json();
+      }),
   });
 
   return (
-    <div className="providers">
+    <div className="conductores">
       <div className="info">
         <h1>Conductores</h1>
         <button onClick={() => setOpen(true)}>Add New Driver</button>
@@ -64,9 +75,14 @@ const Drivers = () => {
       {isLoading ? (
         "Loading..."
       ) : (
-        <DataTable slug="providers" columns={columns} rows={data} />
+        <DataTable
+          slug="conductores"
+          columns={columns}
+          getRowId={(row: any) => row.ID} // Aquí especificas que idCliente es el identificador único
+          rows={data}
+        />
       )}
-      {open && <Add slug="providers" columns={columns} setOpen={setOpen} />}
+      {open && <Add slug="conductores" columns={columns} setOpen={setOpen} />}
     </div>
   );
 };

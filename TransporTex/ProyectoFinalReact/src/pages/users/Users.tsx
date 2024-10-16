@@ -8,11 +8,12 @@ import Add from "../../components/add/Add";
 import { useQuery } from "@tanstack/react-query";
 
 const columns: GridColDef[] = [
-  { 
-    field: "ID", 
+  {
+    field: "ID",
     type: "number",
-    headerName: "ID", 
-    width: 90 },
+    headerName: "ID",
+    width: 90,
+  },
   {
     field: "nombre",
     type: "string",
@@ -37,7 +38,6 @@ const columns: GridColDef[] = [
     headerName: "Email",
     width: 200,
   },
-  
 ];
 
 const Users = () => {
@@ -49,23 +49,21 @@ const Users = () => {
     queryKey: ["allusers"],
     queryFn: () =>
       fetch("http://localhost:8081/cliente/todos", {
-        method: 'GET',
-        credentials: 'include', // Incluye las credenciales si es necesario
+        method: "GET",
+        credentials: "include", // Incluye las credenciales si es necesario
         headers: {
-          'Content-Type': 'application/json',
-          'Authorization': 'Basic ' + btoa('admin:admin123'), // Autenticación básica
+          "Content-Type": "application/json",
+          Authorization: "Basic " + btoa("admin:admin123"), // Autenticación básica
         },
       }).then((res) => {
         if (!res.ok) {
-          throw new Error('Error fetching data');
+          throw new Error("Error fetching data");
         }
         return res.json();
       }),
   });
 
-console.log(data)
-
-
+  console.log(data);
 
   return (
     <div className="users">
@@ -73,19 +71,16 @@ console.log(data)
         <h1>Users</h1>
         <button onClick={() => setOpen(true)}>Add New User</button>
       </div>
-       {isLoading ? (
+      {isLoading ? (
         "Loading..."
       ) : (
         <DataTable
-  slug="cliente"
-  columns={columns}
-  getRowId={(row: any) => row.idCliente} // Aquí especificas que idCliente es el identificador único
-  rows={data}
-/>
-
-   
-        
-      )} 
+          slug="cliente"
+          columns={columns}
+          getRowId={(row: any) => row.idCliente} // Aquí especificas que idCliente es el identificador único
+          rows={data}
+        />
+      )}
       {open && <Add slug="cliente" columns={columns} setOpen={setOpen} />}
     </div>
   );
