@@ -1,0 +1,230 @@
+.hammer-icon {
+    position: absolute;
+    top: 1058px;
+    left: 510px;
+    border-radius: 200px;
+    width: 291px;
+    height: 335px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 15.52px;
+    background-color: #f2f2f2;
+    width: 309px;
+    height: 500px;
+}
+.producto {
+    position: relative;
+    top: 70px;
+    white-space: pre-wrap;
+}
+.total-pagar-container {
+    position: absolute;
+    top: 550px; /* Ajusta la posición como necesites */
+    left: 100px;
+    width: 160px;
+    height: 48px;
+    border-radius: 38px;
+    background-color: white;
+    border: 2px solid #fe6f23; /* Color del borde */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.total-pagar-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fe6f23; /* Color del texto */
+}
+
+.productoDetalle {
+    white-space: pre-wrap;
+}
+.nombre-del-producto {
+    position: relative;
+    top: 70px;
+    color: #808080;
+}
+.nombre-del-producto1 {
+    color: #808080;
+}
+.precio-unitario-container {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    display: inline-block;
+    width: 288px;
+    height: 25px;
+}
+
+.adicionales{
+    position: relative;
+    top: 70px;
+}
+.producto-nombre-del-container {
+    position: absolute;
+    top: 23.66px;
+    left: 12px;
+    display: inline-block;
+    width: 288px;
+    height: 41.9px;
+}
+.cantidad-10-unidades-container {
+    position: absolute;
+    top: 89px;
+    left: 11px;
+    display: inline-block;
+    width: 283px;
+    height: 23px;
+}
+.group-wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 309px;
+    height: 424px;
+}
+.food-inner {
+    position: absolute;
+    top: 129px;
+    left: 26px;
+    width: 309px;
+    height: 424px;
+}
+.detalle {
+    position: absolute;
+    top: 65px;
+    left: 26px;
+    font-size: 40px;
+}
+.tiempo-estimado-4039-container {
+    position: absolute;
+    top: 186px;
+    left: 37px;
+    display: inline-block;
+    width: 287px;
+}
+.total-a-pagar {
+    position: absolute;
+    top: 520px;
+    left: 106px;
+}
+.food-child {
+    position: absolute;
+    top: 481px;
+    left: 95px;
+    border-radius: 39.44px;
+    background-color: #fe6f23;
+    width: 171px;
+    height: 52px;
+}
+.food-item {
+    position: absolute;
+    top: 483px;
+    left: 100px;
+    border-radius: 38.41px;
+    width: 160px;
+    height: 48px;
+}
+.q2000 {
+    position: absolute;
+    top: 495px;
+    left: 144px;
+}
+.instance-child {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 40px;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 20px;
+    background-color: #fe6f23;
+}
+.rectangle-div {
+    position: absolute;
+    top: 603px;
+    left: 37px;
+    width: 120px;
+    height: 41px;
+}
+.food-child1 {
+    position: relative;
+    height: 5.13%;
+    width: 33.33%;
+    top: 644px;
+    right: 13.06%;
+    bottom: 19.5%;
+    left: 53.61%;
+    border-radius: 20px;
+    background-color: #fe6f23;
+}
+.confirmar {
+    position: absolute;
+    top: 650px;
+    left: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Poppins;
+    color: #fff;
+    background-color: #fe6f23;
+    border: none;
+    text-align: center;
+}
+.atras {
+    position: absolute;
+    top: 650px;
+    left: 65px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Poppins;
+    color: #fff;
+    background-color: #fe6f23;
+    border: none;
+    text-align: center;
+}
+.food-child2 {
+    position: absolute;
+    top: 330px;
+    left: 41px;
+    background-color: #fff;
+    width: 279px;
+    height: 171px;
+}
+.productos-q1000 {
+    position: absolute;
+    top: 266px;
+    left: 50px;
+    display: inline-block;
+    width: 260px;
+}
+.servicio-de-envio-container {
+    position: absolute;
+    top: 300px;
+    left: 50px;
+}
+.food {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+    width: 360px;
+    height: 800px;
+    overflow: hidden;
+}
+.food-parent {
+    width: 100%;
+    position: relative;
+    height: 800px;
+    text-align: left;
+    font-size: 20px;
+    color: #000;
+    font-family: Roboto;
+}
+
